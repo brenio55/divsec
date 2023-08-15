@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import './App.css'
+import Header from '../mainComponents/Header'
 
 function WhyDivsec() {
 
   return (
     <>
-    
+        <Header></Header>
+        <div className="banner"></div>
     </>
   )
 }
