@@ -2,6 +2,7 @@ import { useContext, useState } from 'react'
 import { Context } from '../../App'
 import Header from '../../mainComponents/main/Header'
 import Banner from './Banner'
+import Services from './Services'
 
 
 
@@ -13,6 +14,7 @@ function Main() {
     <>
         <Header></Header>
         <Banner></Banner>
+        <Services></Services>
     </>
   )
 }
