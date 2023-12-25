@@ -36,9 +36,33 @@ mark{
     gap: 30px;
 }
 
+.banner h1{
+    width: 67%;
+    margin: 0 auto;
+}
+
 .roller h3 {
     font-weight: 200px;
 }
 
 /********************************************/
+
+.titlesIntro{
+    font-size: 3.4em;
+    text-align: center;
+    font-weight: 600;
+    width: 80%;
+    margin: 100px auto;
+}
+
+.servicesTitle{
+    text-align: center;
+}
+
+section .serviceGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
 

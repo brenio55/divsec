@@ -18,7 +18,7 @@ body {
   height: 929px;
   position: absolute;
   top: 0px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .flex {
@@ -35,6 +35,7 @@ header {
   width: 100%;
   align-items: center;
   margin-top: 55px;
+  z-index: 1000;
 }
 header .logo img {
   height: 36px;
@@ -68,6 +69,15 @@ header .menu ul li {
   color: black;
   padding: 10px 48px;
   height: 48px;
+  transition: 0.2s all;
+}
+.buttonPattern.white.squareBorder {
+  border-radius: 0;
+}
+.buttonPattern.white:hover {
+  background-color: #020306;
+  color: white;
+  transition: 0.2s all;
 }
 
 .buttonPattern:hover {
@@ -75,4 +85,8 @@ header .menu ul li {
   background-color: white;
   color: black;
   transition: 0.2s all;
+}
+
+span.purpleColor {
+  color: #b30ecf;
 }

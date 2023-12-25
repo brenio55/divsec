@@ -39,3 +39,36 @@ ul li{
     border: 1px solid rgba(255,255,255,0.4);
     border-radius: 25px;
 }
+
+.serviceComponentMain{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.serviceComponentMain button{
+    margin: 0;
+}
+
+article.serviceComponent{
+    width: 435px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+}
+
+article.serviceComponent img{
+    /* max-width: 400px; */
+    max-height: 520px;
+}
+
+article.serviceComponent p{
+    font-size: 13px;
+    margin-bottom: 0;
+}

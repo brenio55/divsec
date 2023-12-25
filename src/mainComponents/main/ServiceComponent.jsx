@@ -1,3 +1,5 @@
+import './mainComponents.css';
+
 function ServiceComponent(props){
 
     let name = props.name;
@@ -8,11 +10,17 @@ function ServiceComponent(props){
     console.log(imgSrc)
     return (
         <>
-            <img src={imgSrc} alt="" />
-            <h3>{name}</h3>
-            <p>{description}</p>
+        <article className="serviceComponentMain"> 
+            <article className="serviceComponent">
+                <img src={imgSrc} alt="" />
+                <h3>{name}</h3>
+                <p>{description}</p>
 
-            <a href={link}><button>Conhecer mais</button></a>
+                
+            </article>
+
+            <a href={link}><button className="buttonPattern white squareBorder">Conhecer mais</button></a>
+        </article>
         </>
     )
 }
