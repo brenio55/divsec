@@ -4,7 +4,7 @@ function Services(){
     return (
         <>
         <section className="services">
-            <h2 className="titlesIntro">Faça sua empresa <span className="purpleColor">dobrar o número de vendas</span> com seu website, <span className="purpleColor">torne real</span> seu desejo com um dos nossos serviços</h2>
+            <h2 className="titlesIntro">Faça sua empresa <span className="purpleColor">dobrar o número de vendas</span> com seu website, <span className="purpleColor">torne real</span> seu desejo com um dos nossos <span className="purpleColor">serviços</span></h2>
 
             <h2 className="servicesTitle">Serviços</h2>
             <section className="serviceGrid">

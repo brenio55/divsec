@@ -53,22 +53,28 @@ ul li{
 }
 
 article.serviceComponent{
-    width: 435px;
+    width: 415px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 article.serviceComponent img{
     /* max-width: 400px; */
-    max-height: 520px;
+    max-height: 440px;
+    border-radius: 13px;
 }
 
 article.serviceComponent p{
     font-size: 13px;
-    margin-bottom: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+article.serviceComponent h3{
+    margin: 0 auto;
 }
