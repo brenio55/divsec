@@ -3,6 +3,12 @@
 
 html {
   max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+a{
+    color: unset;
+    text-decoration: unset;
 }
 
 body {
@@ -245,7 +251,8 @@ section.services{
     }
     .servicesTitle {
         text-align: center;
-        } 
+        font-size: 3.4em;
+    } 
     section.serviceGrid {
         display: flex;
         align-items: center;

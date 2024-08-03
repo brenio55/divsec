@@ -12,7 +12,7 @@ function Banner (){
 
                 <div className='roller'>
                     <h3>Seu site, música ou arte digital em nossas mãos, vem saber mais!</h3>
-                    <button className='buttonPattern white'>INICIAR</button>
+                    <a href="#services"><button className='buttonPattern white'>INICIAR</button></a>
                 </div>
             </section>
         </>

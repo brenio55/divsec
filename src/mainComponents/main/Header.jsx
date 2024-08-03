@@ -16,7 +16,7 @@ function Header (){
                         <nav>
                             <ul>
                                 <li>Quem Somos</li>
-                                <li>Serviços</li>
+                                <a href='#services'><li>Serviços</li></a>
                                 <li>FAQ</li>
                             </ul>
                         </nav>
