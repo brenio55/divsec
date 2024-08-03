@@ -1,4 +1,4 @@
-import './mainPages.css';
+// import './mainPages.css';
 
 function Banner (){
 

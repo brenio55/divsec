@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
-import './App.css'
+// import './App.css'
+import './css/App.css'
 
 import WhyDivsec from './pages/admin/WhyDivsec';
 import Main from './pages/main/Main';

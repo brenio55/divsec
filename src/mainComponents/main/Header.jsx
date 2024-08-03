@@ -1,4 +1,4 @@
-import './mainComponents.css';
+// import './mainComponents.css';
 
 import '/img/logoCurta.png'
 

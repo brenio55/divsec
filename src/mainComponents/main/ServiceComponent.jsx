@@ -1,4 +1,4 @@
-import './mainComponents.css';
+// import './mainComponents.css';
 
 function ServiceComponent(props){
 

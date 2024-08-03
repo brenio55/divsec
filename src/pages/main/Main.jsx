@@ -4,6 +4,7 @@ import Header from '../../mainComponents/main/Header'
 import Banner from './Banner'
 import Services from './Services'
 import Workflow from './Workflow'
+import LastRatings from './lastRatings'
 
 
 
@@ -17,6 +18,7 @@ function Main() {
         <Banner></Banner>
         <Services></Services>
         <Workflow></Workflow>
+        <LastRatings></LastRatings>
     </>
   )
 }
