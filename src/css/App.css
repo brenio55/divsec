@@ -333,4 +333,89 @@ section.ratings .ratingComponents .ratingComponent .flex img {
 .orcamentoButton {
   margin-top: 26px;
   margin-bottom: 66px;
+}
+.orcamentoButton button:hover {
+  background: repeat padding-box border-box 0%/auto scroll linear-gradient(90deg, #7A64FF 0%, #FF337A 100%);
+  border-color: #737373;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 300px;
+  gap: 35px;
+}
+footer .leftSideLine {
+  border-top: 1px solid #939393;
+  width: 770px;
+}
+footer .leftSideLine div.logoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+footer .leftSideLine div.logoFooter img {
+  width: 64px;
+}
+footer .leftSideLine div.menuFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .leftSideLine div.menuFooter .menuLeft, footer .leftSideLine div.menuFooter .menuRight {
+  width: 200px;
+}
+footer .leftSideLine div.menuFooter .menuLeft ul, footer .leftSideLine div.menuFooter .menuRight ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 12px;
+}
+footer .leftSideLine div.menuFooter .menuLeft ul li, footer .leftSideLine div.menuFooter .menuRight ul li {
+  color: #939393;
+}
+footer .socialMediaFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+footer .socialMediaFooter .titleFooter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 235px;
+  gap: 10px;
+}
+footer .socialMediaFooter .titleFooter h3, footer .socialMediaFooter .titleFooter p {
+  margin: 0;
+}
+footer .socialMediaFooter .titleFooter p {
+  color: #939393;
+}
+footer .socialMediaFooter img {
+  width: 30px;
+  height: 30px;
+}
+footer .socialMediaFooter .socialMediaIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+footer .copyrightFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #939393;
+  padding: 35px;
+}
+footer .copyrightFooter p {
+  font-weight: 700;
+  color: #939393;
 }/*# sourceMappingURL=App.css.map */
