@@ -347,6 +347,10 @@ footer {
   min-height: 300px;
   gap: 35px;
 }
+footer a {
+  margin: 0;
+  padding: 0;
+}
 footer .leftSideLine {
   border-top: 1px solid #939393;
   width: 770px;
@@ -378,6 +382,11 @@ footer .leftSideLine div.menuFooter .menuLeft ul, footer .leftSideLine div.menuF
 }
 footer .leftSideLine div.menuFooter .menuLeft ul li, footer .leftSideLine div.menuFooter .menuRight ul li {
   color: #939393;
+  cursor: pointer;
+}
+footer .leftSideLine div.menuFooter .menuLeft ul li:hover, footer .leftSideLine div.menuFooter .menuRight ul li:hover {
+  color: #b30ecf;
+  transition: 0.2s all;
 }
 footer .socialMediaFooter {
   display: flex;

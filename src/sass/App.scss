@@ -415,6 +415,11 @@ footer{
   $gap: 35px;
   gap: $gap;
 
+  a{
+    margin: 0;
+    padding: 0;
+  }
+
   .leftSideLine{
     border-top: 1px solid #939393;
     width: 770px;
@@ -448,7 +453,16 @@ footer{
 
           li{
             color: #939393;
+
+            cursor: pointer;
+  
+            &:hover {
+                color: #b30ecf;
+                transition: 0.2s all;
+              }
           }
+
+          
         }
       }
       .menuLeft{

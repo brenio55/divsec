@@ -21,7 +21,7 @@ function Header (){
                             </ul>
                         </nav>
                     </div>
-                    <button className='buttonPattern'>CONTATO</button>
+                    <a href='https://www.instagram.com/divsec.cloud/' target='_blank'><button className='buttonPattern'>CONTATO</button></a>
                 </div>
             </header>
         </>

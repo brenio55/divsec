@@ -12,7 +12,7 @@ function Footer(){
                             <h2>DiVSeC</h2>
                             <ul>
                                 <li>Quem Somos</li>
-                                <li>Serviços</li>
+                                <a href='#services'><li>Serviços</li></a>
                                 <li>FAQ</li>
                             </ul>                    
                         </div>    
@@ -23,7 +23,7 @@ function Footer(){
                             <ul>
                                 <li>Termos e Condições</li>
                                 <li>Política de Privacidade</li>
-                                <li>Contato</li>
+                                <a href='https://www.instagram.com/divsec.cloud/' target='_blank'><li>Contato</li></a>
                             </ul>                    
                         </div>    
                     </div>
@@ -40,8 +40,8 @@ function Footer(){
                         </div>                    
 
                         <div className="flex socialMediaIcons">
-                            <img src="img/linkedin.webp" alt="" srcset="" />
-                            <img src="img/instagramWhite.svg" alt="" />
+                            <a href='https://www.linkedin.com/in/brenio-filho/' target='_blank'><img src="img/linkedin.webp" alt="" srcset="" /></a>
+                            <a href='https://www.instagram.com/divsec.cloud/' target='_blank'><img src="img/instagramWhite.svg" alt="" /></a>
                         </div>
                         
                 </div>
