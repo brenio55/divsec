@@ -21,7 +21,7 @@ function Main() {
         <Ratings></Ratings>
 
         <div className="flex center orcamentoButton" id="orcamentoButton">
-          <a href='https://www.instagram.com/divsec.cloud/' target='_blank'><button className="buttonPattern white">Realizar orçamento</button></a>
+          <a href='https://wa.me/558431902145' target='_blank'><button className="buttonPattern white">Realizar orçamento</button></a>
         </div>
 
         <Footer></Footer>
