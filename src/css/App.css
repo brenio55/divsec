@@ -180,7 +180,7 @@ section.bannerPage .banner {
   flex-direction: column;
   width: 100%;
   text-align: center;
-  height: 100vh;
+  height: 100dvh;
   background-repeat: no-repeat;
 }
 @media (min-width: 320px) {
