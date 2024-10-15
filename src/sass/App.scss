@@ -382,9 +382,9 @@ section.workFlow{
           width: 270px;
           
         }
-        @media (min-width: 720px){
-          flex-direction: row;
-        }
+        // @media (min-width: 720px){
+        //   flex-direction: row;
+        // }
         
 
         .stepTitle, .stepDescription {
@@ -675,7 +675,7 @@ footer{
         width: unset;
       }
       @media (min-width: 720px){
-        width: 500px;
+        width: 235px;
       }
       
       h3, p{

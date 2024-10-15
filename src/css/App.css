@@ -347,11 +347,6 @@ section.workFlow .step {
     width: 270px;
   }
 }
-@media (min-width: 720px) {
-  section.workFlow .step {
-    flex-direction: row;
-  }
-}
 section.workFlow .step .stepTitle, section.workFlow .step .stepDescription {
   padding-left: 15px;
   padding-right: 0;
@@ -628,7 +623,7 @@ footer .socialMediaFooter .titleFooter {
 }
 @media (min-width: 720px) {
   footer .socialMediaFooter .titleFooter {
-    width: 500px;
+    width: 235px;
   }
 }
 footer .socialMediaFooter .titleFooter h3, footer .socialMediaFooter .titleFooter p {
