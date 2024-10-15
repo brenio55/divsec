@@ -183,6 +183,16 @@ section.bannerPage .banner {
   height: 100vh;
   background-repeat: no-repeat;
 }
+@media (min-width: 320px) {
+  section.bannerPage .banner {
+    background-size: 300%;
+  }
+}
+@media (min-width: 720px) {
+  section.bannerPage .banner {
+    background-size: 100%;
+  }
+}
 section.bannerPage .banner h1, section.bannerPage .banner h2 {
   font-size: 4.8em;
 }
