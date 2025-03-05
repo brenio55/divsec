@@ -184,6 +184,9 @@ header .hamburger-icon.open span:nth-child(3) {
   header .headerRight .language-switcher {
     display: flex;
   }
+  header .headerRight .language-dropdown {
+    display: flex;
+  }
 }
 @media (min-width: 720px) {
   header .headerRight {
@@ -250,6 +253,27 @@ header .hamburger-icon.open span:nth-child(3) {
   margin-top: 20px;
   padding: 10px 20px;
   border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.mobile-menu .mobile-language-switcher {
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+.mobile-menu .mobile-language-switcher .language-dropdown {
+  margin: 0 auto;
+}
+.mobile-menu .mobile-language-switcher .language-dropdown .language-dropdown-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  min-width: 150px;
+}
+.mobile-menu .mobile-language-switcher .language-dropdown .language-dropdown-button .language-name, .mobile-menu .mobile-language-switcher .language-dropdown .language-dropdown-button .dropdown-arrow {
+  display: inline-block;
+}
+.mobile-menu .mobile-language-switcher .language-dropdown .language-dropdown-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  right: auto;
 }
 
 @media (min-width: 769px) {
@@ -920,4 +944,99 @@ footer .copyrightFooter p {
 .language-switcher .language-button:hover {
   background-color: rgba(179, 14, 207, 0.5);
   transform: scale(1.05);
+}
+
+/* Language Dropdown Styles */
+.language-dropdown {
+  position: relative;
+  margin-left: 15px;
+}
+.language-dropdown .language-dropdown-button {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 20px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+.language-dropdown .language-dropdown-button:hover {
+  background-color: rgba(179, 14, 207, 0.5);
+}
+.language-dropdown .language-dropdown-button .language-flag {
+  margin-right: 8px;
+  font-size: 16px;
+}
+.language-dropdown .language-dropdown-button .language-name {
+  margin-right: 8px;
+  font-size: 14px;
+}
+.language-dropdown .language-dropdown-button .dropdown-arrow {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+.language-dropdown .language-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  min-width: 150px;
+  z-index: 1000;
+  overflow: hidden;
+}
+.language-dropdown .language-dropdown-menu li {
+  margin: 0;
+  padding: 0;
+}
+.language-dropdown .language-dropdown-menu .language-option {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.language-dropdown .language-dropdown-menu .language-option:hover {
+  background-color: rgba(179, 14, 207, 0.3);
+}
+.language-dropdown .language-dropdown-menu .language-option.active {
+  background-color: rgba(179, 14, 207, 0.5);
+}
+.language-dropdown .language-dropdown-menu .language-option .language-flag {
+  margin-right: 10px;
+  font-size: 16px;
+}
+.language-dropdown .language-dropdown-menu .language-option .language-name {
+  font-size: 14px;
+}
+@media (max-width: 720px) {
+  .language-dropdown .language-dropdown-button {
+    min-width: auto;
+    padding: 8px;
+  }
+  .language-dropdown .language-dropdown-button .language-name, .language-dropdown .language-dropdown-button .dropdown-arrow {
+    display: none;
+  }
+  .language-dropdown .language-dropdown-button .language-flag {
+    margin-right: 0;
+    font-size: 18px;
+  }
+  .language-dropdown .language-dropdown-menu {
+    right: -10px;
+  }
 }/*# sourceMappingURL=App.css.map */

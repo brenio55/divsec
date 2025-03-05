@@ -106,23 +106,21 @@ export const translations = {
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
+  // Definir 'pt' como idioma padrão
+  const defaultLanguage = 'pt';
+  
   // Try to get language from localStorage, default to 'pt'
   const [language, setLanguage] = useState(() => {
     const savedLanguage = localStorage.getItem('language');
-    return savedLanguage || 'pt';
+    return savedLanguage || defaultLanguage;
   });
 
   // Update localStorage when language changes
   useEffect(() => {
     localStorage.setItem('language', language);
-    // Optional: Update HTML lang attribute
+    // Update HTML lang attribute
     document.documentElement.lang = language;
   }, [language]);
-
-  // Toggle between 'pt' and 'en'
-  const toggleLanguage = () => {
-    setLanguage(prevLang => prevLang === 'pt' ? 'en' : 'pt');
-  };
 
   // Get text based on current language
   const t = (key) => {
@@ -142,7 +140,7 @@ export const LanguageProvider = ({ children }) => {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );

@@ -75,7 +75,7 @@ function Header (){
                         <li><a href="#contact" className="mobile-contact" onClick={toggleMobileMenu}>{t('contact')}</a></li>
                     </ul>
                 </nav>
-                <div style={{ padding: '20px', textAlign: 'center' }}>
+                <div className="mobile-language-switcher">
                     <LanguageSwitcher />
                 </div>
             </div>
