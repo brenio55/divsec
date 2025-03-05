@@ -21,7 +21,7 @@ function Footer(){
                             </ul>                    
                         </div>    
                     </div>                    
-                    <div className="flex">
+                    <div className="flex menuRightWrapper">
                         <div className="menuRight">
                             <h2>{language === 'pt' ? 'Empresa' : 'Company'}</h2>
                             <ul>
@@ -29,33 +29,34 @@ function Footer(){
                                 <li>{language === 'pt' ? 'Política de Privacidade' : 'Privacy Policy'}</li>
                                 <a href='https://www.instagram.com/divsec.cloud/' target='_blank'><li>{language === 'pt' ? 'Contato' : 'Contact'}</li></a>
                             </ul>                    
+                            
                         </div>    
-                    </div>
-                </div>
-            </div>
-            <div className="flex">
-                <div className="socialMediaFooter">                    
-                        <div className="flex titleFooter">
-                            <div>
-                                <h3>DIVSEC.CLOUD</h3>
-                                <p>{language === 'pt' ? 'Dividindo Seções, Conquistando com Tecnologia em Nuvem' : 'Dividing Sections, Conquering with Cloud Technology'}</p>
-                            </div>                            
-                            <p>56.096.623/0001-64</p>
-                        </div>                    
+                        <div className="flex">
+                            <div className="socialMediaFooter">                    
+                                    <div className="flex titleFooter">
+                                        <div>
+                                            <h3>DIVSEC.CLOUD</h3>
+                                            <p>{language === 'pt' ? 'Dividindo Seções, Conquistando com Tecnologia em Nuvem' : 'Dividing Sections, Conquering with Cloud Technology'}</p>
+                                        </div>                            
+                                        <p>56.096.623/0001-64</p>
+                                    </div>                    
 
-                        <div className="flex socialMediaIcons">
-                            <a href='https://www.linkedin.com/in/brenio-filho/' target='_blank'><img src="img/linkedin.webp" alt="LinkedIn" /></a>
-                            <a href='https://www.instagram.com/divsec.cloud/' target='_blank'><img src="img/instagramWhite.svg" alt="Instagram" /></a>
-                        </div>
-                        
-                </div>
+                                    <div className="flex socialMediaIcons">
+                                        <a href='https://www.linkedin.com/in/brenio-filho/' target='_blank'><img src="img/linkedin.webp" alt="LinkedIn" /></a>
+                                        <a href='https://www.instagram.com/divsec.cloud/' target='_blank'><img src="img/instagramWhite.svg" alt="Instagram" /></a>
+                                    </div>
+                                    
+                            </div>
                 
-            </div>     
-            <div className="flex">
-                <div className="copyrightFooter">
-                        <p>{language === 'pt' ? '© 2024 BY DIVSEC - TODOS OS DIREITOS RESERVADOS' : '© 2024 BY DIVSEC - ALL RIGHTS RESERVED'}</p>
-                </div>
-            </div>      
+                        </div>     
+                        <div className="flex">
+                            <div className="copyrightFooter">
+                                    <p>{language === 'pt' ? '© 2025 BY DIVSEC - TODOS OS DIREITOS RESERVADOS' : '© 2025 BY DIVSEC - ALL RIGHTS RESERVED'}</p>
+                            </div>
+                        </div>    
+                    </div>            
+                </div>            
+            </div>            
         </footer>
         </>
     )

@@ -1492,6 +1492,7 @@ footer {
 @media (min-width: 720px) {
   footer {
     flex-direction: row;
+    flex-wrap: wrap;
     position: unset;
     min-height: 250px;
     padding: 30px;
@@ -1525,15 +1526,15 @@ footer a {
 }
 @media (min-width: 720px) {
   footer .flex {
-    align-items: unset;
+    align-items: flex-start;
   }
 }
 footer .leftSideLine {
   border-top: 1px solid #939393;
-  width: 770px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 @media (min-width: 320px) {
   footer .leftSideLine {
@@ -1541,6 +1542,7 @@ footer .leftSideLine {
     width: 100%;
     border-top: 1px solid #939393;
     padding-top: 20px;
+    align-items: center;
   }
 }
 @media (min-width: 576px) {
@@ -1548,38 +1550,36 @@ footer .leftSideLine {
     flex-direction: column;
     width: 100%;
     padding-top: 20px;
+    align-items: center;
   }
 }
 @media (min-width: 720px) {
   footer .leftSideLine {
     flex-direction: row;
-    width: 50%;
+    width: 100%;
     padding-top: 20px;
+    margin-bottom: 30px;
+    align-items: flex-start;
   }
 }
 @media (min-width: 992px) {
   footer .leftSideLine {
-    width: 60%;
+    width: 100%;
     padding-top: 20px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
   footer .leftSideLine {
-    width: 65%;
+    width: 100%;
     padding-top: 20px;
-  }
-}
-@media (min-width: 1400px) {
-  footer .leftSideLine {
-    width: 770px;
-    padding-top: 20px;
+    margin-bottom: 30px;
   }
 }
 footer .leftSideLine div.logoFooter {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
 }
 footer .leftSideLine div.logoFooter img {
   width: 64px;
@@ -1619,25 +1619,17 @@ footer .leftSideLine div.logoFooter img {
 @media (min-width: 720px) {
   footer .leftSideLine div.logoFooter {
     margin-top: unset;
-    width: 30%;
-    min-width: 150px;
+    width: 20%;
   }
 }
 @media (min-width: 992px) {
   footer .leftSideLine div.logoFooter {
-    width: 30%;
-    min-width: 180px;
+    width: 20%;
   }
 }
 @media (min-width: 1200px) {
   footer .leftSideLine div.logoFooter {
-    width: 30%;
-    min-width: 200px;
-  }
-}
-@media (min-width: 1400px) {
-  footer .leftSideLine div.logoFooter {
-    width: 500px;
+    width: 20%;
   }
 }
 footer .leftSideLine div.menuFooter {
@@ -1653,6 +1645,7 @@ footer .leftSideLine div.menuFooter {
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    align-items: center;
   }
 }
 @media (min-width: 576px) {
@@ -1660,35 +1653,96 @@ footer .leftSideLine div.menuFooter {
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    align-items: center;
   }
 }
 @media (min-width: 720px) {
   footer .leftSideLine div.menuFooter {
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     margin-top: 0;
     gap: 10px;
+    align-items: flex-start;
   }
 }
 @media (min-width: 992px) {
   footer .leftSideLine div.menuFooter {
-    width: 70%;
+    width: 80%;
     gap: 15px;
   }
 }
 @media (min-width: 1200px) {
   footer .leftSideLine div.menuFooter {
-    width: 70%;
+    width: 80%;
     gap: 20px;
   }
 }
-@media (min-width: 1400px) {
-  footer .leftSideLine div.menuFooter {
-    width: calc(100% - 500px);
+footer .leftSideLine div.menuFooter .menuRightWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+@media (min-width: 320px) {
+  footer .leftSideLine div.menuFooter .menuRightWrapper {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
   }
 }
-footer .leftSideLine div.menuFooter .menuLeft, footer .leftSideLine div.menuFooter .menuRight {
-  width: 200px;
+@media (min-width: 576px) {
+  footer .leftSideLine div.menuFooter .menuRightWrapper {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media (min-width: 720px) {
+  footer .leftSideLine div.menuFooter .menuRightWrapper {
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 992px) {
+  footer .leftSideLine div.menuFooter .menuRightWrapper {
+    width: 100%;
+    gap: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .leftSideLine div.menuFooter .menuRightWrapper {
+    width: 100%;
+    gap: 20px;
+  }
+}
+footer .leftSideLine div.menuFooter h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+@media (min-width: 320px) {
+  footer .leftSideLine div.menuFooter h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) {
+  footer .leftSideLine div.menuFooter h3 {
+    font-size: 17px;
+  }
+}
+@media (min-width: 720px) {
+  footer .leftSideLine div.menuFooter h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  footer .leftSideLine div.menuFooter h3 {
+    font-size: 19px;
+  }
 }
 @media (min-width: 320px) {
   footer .leftSideLine div.menuFooter .menuLeft, footer .leftSideLine div.menuFooter .menuRight {
@@ -1724,31 +1778,26 @@ footer .leftSideLine div.menuFooter .menuLeft, footer .leftSideLine div.menuFoot
     width: 50%;
   }
 }
-@media (min-width: 1400px) {
-  footer .leftSideLine div.menuFooter .menuLeft, footer .leftSideLine div.menuFooter .menuRight {
-    width: 200px;
-  }
-}
 footer .leftSideLine div.menuFooter .menuLeft h2, footer .leftSideLine div.menuFooter .menuRight h2 {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 @media (min-width: 320px) {
   footer .leftSideLine div.menuFooter .menuLeft h2, footer .leftSideLine div.menuFooter .menuRight h2 {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
   }
 }
 @media (min-width: 576px) {
   footer .leftSideLine div.menuFooter .menuLeft h2, footer .leftSideLine div.menuFooter .menuRight h2 {
     font-size: 17px;
-    margin-bottom: 12px;
+    margin: 0 0 12px 0;
   }
 }
 @media (min-width: 720px) {
   footer .leftSideLine div.menuFooter .menuLeft h2, footer .leftSideLine div.menuFooter .menuRight h2 {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
   }
 }
 footer .leftSideLine div.menuFooter .menuLeft ul, footer .leftSideLine div.menuFooter .menuRight ul {
@@ -1801,9 +1850,8 @@ footer .leftSideLine div.menuFooter .menuLeft ul li:hover, footer .leftSideLine 
 footer .socialMediaFooter {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 35px;
-  border-top: 1px solid #939393;
   margin-top: 30px;
   padding-top: 30px;
 }
@@ -1812,6 +1860,8 @@ footer .socialMediaFooter {
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    border-top: 1px solid #939393;
+    align-items: center;
   }
 }
 @media (min-width: 576px) {
@@ -1819,37 +1869,35 @@ footer .socialMediaFooter {
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    border-top: 1px solid #939393;
+    align-items: center;
   }
 }
 @media (min-width: 720px) {
   footer .socialMediaFooter {
     flex-direction: row;
     border-top: none;
-    border-left: 1px solid #939393;
+    border-left: none;
     margin-top: 0;
     padding-top: 0;
-    padding-left: 20px;
-    width: 25%;
+    padding-left: 0;
+    width: 100%;
     gap: 15px;
+    align-items: flex-start;
   }
 }
 @media (min-width: 992px) {
   footer .socialMediaFooter {
-    padding-left: 25px;
+    padding-left: 0;
     gap: 20px;
-    width: 20%;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
   footer .socialMediaFooter {
-    padding-left: 30px;
+    padding-left: 0;
     gap: 35px;
-    width: 15%;
-  }
-}
-@media (min-width: 1400px) {
-  footer .socialMediaFooter {
-    width: auto;
+    width: 100%;
   }
 }
 footer .socialMediaFooter .titleFooter {
@@ -1874,19 +1922,20 @@ footer .socialMediaFooter .titleFooter {
 }
 @media (min-width: 720px) {
   footer .socialMediaFooter .titleFooter {
-    width: 180px;
+    width: 70%;
     text-align: left;
     gap: 10px;
+    align-items: flex-start;
   }
 }
 @media (min-width: 992px) {
   footer .socialMediaFooter .titleFooter {
-    width: 200px;
+    width: 70%;
   }
 }
 @media (min-width: 1200px) {
   footer .socialMediaFooter .titleFooter {
-    width: 235px;
+    width: 70%;
   }
 }
 footer .socialMediaFooter .titleFooter h3, footer .socialMediaFooter .titleFooter p {
@@ -1916,15 +1965,25 @@ footer .socialMediaFooter .titleFooter p {
 }
 @media (min-width: 320px) {
   footer .socialMediaFooter .titleFooter p {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media (min-width: 576px) {
   footer .socialMediaFooter .titleFooter p {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media (min-width: 720px) {
+  footer .socialMediaFooter .titleFooter p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) {
+  footer .socialMediaFooter .titleFooter p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1200px) {
   footer .socialMediaFooter .titleFooter p {
     font-size: 14px;
   }
@@ -1955,6 +2014,7 @@ footer .socialMediaFooter .socialMediaIcons {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  margin-right: 15px;
 }
 @media (min-width: 320px) {
   footer .socialMediaFooter .socialMediaIcons {
@@ -2003,24 +2063,19 @@ footer .copyrightFooter {
     border-top: none;
     margin-top: 0;
     padding: 0 0 0 20px;
-    width: 25%;
+    width: 40%;
   }
 }
 @media (min-width: 992px) {
   footer .copyrightFooter {
     padding: 0 0 0 25px;
-    width: 20%;
+    width: 40%;
   }
 }
 @media (min-width: 1200px) {
   footer .copyrightFooter {
     padding: 0 0 0 35px;
-    width: 20%;
-  }
-}
-@media (min-width: 1400px) {
-  footer .copyrightFooter {
-    width: auto;
+    width: 40%;
   }
 }
 footer .copyrightFooter p {
@@ -2029,15 +2084,25 @@ footer .copyrightFooter p {
 }
 @media (min-width: 320px) {
   footer .copyrightFooter p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media (min-width: 576px) {
   footer .copyrightFooter p {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 @media (min-width: 720px) {
+  footer .copyrightFooter p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) {
+  footer .copyrightFooter p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1200px) {
   footer .copyrightFooter p {
     font-size: 14px;
   }
