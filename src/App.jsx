@@ -6,6 +6,7 @@ import './css/App.css'
 
 import WhyDivsec from './pages/admin/WhyDivsec';
 import Main from './pages/main/Main';
+import { LanguageProvider } from './context/LanguageContext';
 
 export const Context = React.createContext();
 
@@ -21,13 +22,15 @@ function App() {
 
   return (
     <>
-      <Context.Provider value={[test, setTest]}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Main/>} /> 
-          </Routes>
-        </BrowserRouter>
-      </Context.Provider>
+      <LanguageProvider>
+        <Context.Provider value={[test, setTest]}>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Main/>} /> 
+            </Routes>
+          </BrowserRouter>
+        </Context.Provider>
+      </LanguageProvider>
     </>
   )
 }

@@ -1,11 +1,14 @@
 // import './mainComponents.css';
 
 import React, { useState, useEffect } from 'react';
-import '/img/logoCurta.png'
+import '/img/logoCurta.png';
+import { useLanguage } from '../../context/LanguageContext';
+import LanguageSwitcher from '../../components/LanguageSwitcher';
 
 function Header (){
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const { t } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,26 +32,29 @@ function Header (){
     return (
         <>
             <header className={scrolled ? 'scrolled' : ''}>
-                <div className='headerLeft' data-aos="fade-right" data-aos-duration="400">
-                    <img className="logo" src="/img/logoCurta.png" alt="Logo DiVSeC" />
+                <div className="headerLeft">
+                    <div className="logo">
+                        <a href="#home">
+                            <img src="/img/logoCurta.png" alt="DivSec Logo" />
+                        </a>
+                    </div>
                 </div>
-                <div className='headerRight' data-aos="fade-left" data-aos-duration="400">
-                    {/* Desktop Navigation */}
-                    <div className='desktop-nav round' data-aos="fade-down" data-aos-duration="400">
-                        <nav>
-                            <ul>
-                                <li data-aos="fade-down" data-aos-duration="400">Quem Somos</li>
-                                <a href='#services'><li data-aos="fade-down" data-aos-duration="400">Serviços</li></a>
-                                <li data-aos="fade-down" data-aos-duration="400">FAQ</li>
-                            </ul>
-                        </nav>
+                
+                <div className="headerRight">
+                    <nav className="desktop-nav">
+                        <ul>
+                            <li><a href="#home">{t('home')}</a></li>
+                            <li><a href="#services">{t('services')}</a></li>
+                            <li><a href="#workflow">{t('workflow')}</a></li>
+                            <li><a href="#testimonials">{t('testimonials')}</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div className="language-and-contact">
+                        <LanguageSwitcher />
+                        <a href="#contact" className="contact-button round">{t('contact')}</a>
                     </div>
                     
-                    <a href='https://wa.me/558431902145' target='_blank' className="contact-button" data-aos="zoom-in" data-aos-duration="400">
-                        <button className='buttonPattern'>CONTATO</button>
-                    </a>
-                    
-                    {/* Hamburger Menu Button - Only visible on mobile */}
                     <div className="hamburger-menu" onClick={toggleMobileMenu}>
                         <div className={`hamburger-icon ${mobileMenuOpen ? 'open' : ''}`}>
                             <span></span>
@@ -57,23 +63,24 @@ function Header (){
                         </div>
                     </div>
                 </div>
-                
-                {/* Mobile Navigation Menu */}
-                <div className={`mobile-menu ${mobileMenuOpen ? 'open' : ''}`}>
-                    <nav>
-                        <ul>
-                            <li onClick={toggleMobileMenu}>Quem Somos</li>
-                            <a href='#services' onClick={toggleMobileMenu}><li>Serviços</li></a>
-                            <li onClick={toggleMobileMenu}>FAQ</li>
-                            <a href='https://wa.me/558431902145' target='_blank' onClick={toggleMobileMenu}>
-                                <li className="mobile-contact">CONTATO</li>
-                            </a>
-                        </ul>
-                    </nav>
-                </div>
             </header>
+            
+            <div className={`mobile-menu ${mobileMenuOpen ? 'open' : ''}`}>
+                <nav>
+                    <ul>
+                        <li><a href="#home" onClick={toggleMobileMenu}>{t('home')}</a></li>
+                        <li><a href="#services" onClick={toggleMobileMenu}>{t('services')}</a></li>
+                        <li><a href="#workflow" onClick={toggleMobileMenu}>{t('workflow')}</a></li>
+                        <li><a href="#testimonials" onClick={toggleMobileMenu}>{t('testimonials')}</a></li>
+                        <li><a href="#contact" className="mobile-contact" onClick={toggleMobileMenu}>{t('contact')}</a></li>
+                    </ul>
+                </nav>
+                <div style={{ padding: '20px', textAlign: 'center' }}>
+                    <LanguageSwitcher />
+                </div>
+            </div>
         </>
-    )
+    );
 }
 
-export default Header
+export default Header;
