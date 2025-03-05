@@ -1,4 +1,5 @@
 // import './mainComponents.css';
+import React from 'react';
 
 function ServiceComponent(props){
 
@@ -12,7 +13,7 @@ function ServiceComponent(props){
         <>
         <article className="serviceComponentMain"> 
             <article className="serviceComponent">
-                <img src={imgSrc} alt="" />
+                <img src={imgSrc} alt={name} />
                 <h3>{name}</h3>
                 <p>{description}</p>
 

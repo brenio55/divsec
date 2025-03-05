@@ -5,9 +5,24 @@
     <link rel="icon" type="image/svg+xml" href="img/logoPequena.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DiVSeC - Cloud Technology</title>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+          duration: 500,
+          easing: 'ease-out',
+          once: false,
+          offset: 50,
+          delay: 0
+        });
+      });
+    </script>
   </body>
 </html>

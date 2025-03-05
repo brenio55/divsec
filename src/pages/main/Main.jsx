@@ -20,8 +20,10 @@ function Main() {
         <Workflow></Workflow>
         <Ratings></Ratings>
 
-        <div className="flex center orcamentoButton" id="orcamentoButton">
-          <a href='https://wa.me/558431902145' target='_blank'><button className="buttonPattern white">Realizar orçamento</button></a>
+        <div className="flex center orcamentoButton" id="orcamentoButton" data-aos="fade-up" data-aos-duration="400">
+          <a href='https://wa.me/558431902145' target='_blank' data-aos="zoom-in" data-aos-duration="400">
+            <button className="buttonPattern white">Realizar orçamento</button>
+          </a>
         </div>
 
         <Footer></Footer>
