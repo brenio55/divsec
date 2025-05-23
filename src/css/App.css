@@ -572,7 +572,8 @@ section.bannerPage .banner {
   text-align: center;
   height: 100dvh;
   background-repeat: no-repeat;
-  background-position: center;
+  
+  background-position: bottom;
 }
 @media (min-width: 320px) {
   section.bannerPage .banner {
@@ -604,6 +605,7 @@ section.bannerPage .banner {
 }
 section.bannerPage .banner h1, section.bannerPage .banner h2 {
   font-size: 4.8em;
+  line-height: 1.2;
 }
 section.bannerPage .banner h1 {
   width: 67%;
@@ -640,32 +642,38 @@ section.bannerPage .banner mark {
 }
 @media (min-width: 320px) {
   section.bannerPage .banner h1, section.bannerPage .banner h2 {
-    font-size: 1.8em;
+    font-size: 1.4em;
+    line-height: 1.3;
   }
 }
 @media (min-width: 576px) {
   section.bannerPage .banner h1, section.bannerPage .banner h2 {
-    font-size: 2.2em;
+    font-size: 1.8em;
+    line-height: 1.3;
   }
 }
 @media (min-width: 720px) {
   section.bannerPage .banner h1, section.bannerPage .banner h2 {
-    font-size: 2.6em;
+    font-size: 2.2em;
+    line-height: 1.3;
   }
 }
 @media (min-width: 992px) {
   section.bannerPage .banner h1, section.bannerPage .banner h2 {
-    font-size: 3.4em;
+    font-size: 2.8em;
+    line-height: 1.3;
   }
 }
 @media (min-width: 1200px) {
   section.bannerPage .banner h1, section.bannerPage .banner h2 {
-    font-size: 3.8em;
+    font-size: 3.2em;
+    line-height: 1.3;
   }
 }
 @media (min-width: 1400px) {
   section.bannerPage .banner h1, section.bannerPage .banner h2 {
-    font-size: 4.2em;
+    font-size: 3.6em;
+    line-height: 1.3;
   }
 }
 section.bannerPage .roller {
@@ -2497,9 +2505,9 @@ footer .copyrightFooter p {
 
 /* Botão com gradiente da marca */
 .buttonPattern.brand-gradient {
-  background: linear-gradient(135deg, #b30ecf 0%, #7b1fa2 100%);
-  color: white;
-  border: none;
+  background: white;
+  color: black;
+  border: 2px solid white;
   padding: 12px 30px;
   border-radius: 8px;
   font-weight: 600;
@@ -2508,7 +2516,9 @@ footer .copyrightFooter p {
 }
 
 .buttonPattern.brand-gradient:hover {
-  background: linear-gradient(135deg, #d81b60 0%, #8e24aa 100%);
+  background: linear-gradient(135deg, #b30ecf 0%, #7b1fa2 100%);
+  color: white;
+  border-color: #b30ecf;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(179, 14, 207, 0.3);
 }
@@ -2576,12 +2586,15 @@ footer .copyrightFooter p {
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  padding: 0 20px;
+  opacity: 0;
 }
 
 .faq-answer.open {
-  max-height: 200px;
-  padding: 0 20px 20px 20px;
+  max-height: 300px;
+  padding: 20px;
+  opacity: 1;
 }
 
 .faq-answer p {
@@ -2687,12 +2700,16 @@ footer .copyrightFooter p {
   }
   
   .faq-question h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-right: 15px;
   }
   
+  .faq-answer {
+    padding: 0 15px;
+  }
+  
   .faq-answer.open {
-    padding: 0 15px 15px 15px;
+    padding: 15px;
   }
 }
 
@@ -2702,12 +2719,16 @@ footer .copyrightFooter p {
   }
   
   .faq-question h3 {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     padding-right: 18px;
   }
   
+  .faq-answer {
+    padding: 0 18px;
+  }
+  
   .faq-answer.open {
-    padding: 0 18px 18px 18px;
+    padding: 18px;
   }
 }
 
@@ -2717,12 +2738,16 @@ footer .copyrightFooter p {
   }
   
   .faq-question h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-right: 20px;
   }
   
+  .faq-answer {
+    padding: 0 20px;
+  }
+  
   .faq-answer.open {
-    padding: 0 20px 20px 20px;
+    padding: 20px;
   }
 }
 

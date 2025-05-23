@@ -25,13 +25,13 @@ function Services(){
             link: "#orcamentoButton"
         },
         {
-            name: "Produção Musical",
+            name: "Consultoria em Produção Musical",
             description: "Exponha seus sentimentos com uma produção musical completa, gravamos sua música, compomos, produzimos, mixamos e masterizamos. Transforme sua arte em realidade!",
             imgSrc: "/img/digital-mixer-recording-studio-with-computer-recording-music.webp",
             link: "#orcamentoButton"
         },
         {
-            name: "Design / Arte com IA",
+            name: "Design e UX / UI",
             description: "Procurando uma capa pra seu álbum, ou simplesmente melhores imagens para seu negócio ou site? Você está precisando de um designer ou de um pouco de Inteligência Artificial!",
             imgSrc: "/img/brenio55_something_that_represents_a_gamma_of_colors_digital_ar_ca81437d-4187-474a-855f-d6.webp",
             link: "#orcamentoButton"
