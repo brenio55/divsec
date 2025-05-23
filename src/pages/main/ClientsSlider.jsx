@@ -2,6 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 import { useLanguage } from '../../context/LanguageContext';
 
 function ClientsSlider() {
@@ -58,35 +59,42 @@ function ClientsSlider() {
             <div className="clients-container" data-aos="fade-up" data-aos-duration="400">
                 <Swiper
                     modules={[Autoplay, EffectCoverflow]}
+                    effect="coverflow"
                     spaceBetween={50}
                     slidesPerView={4}
+                    centeredSlides={true}
                     loop={true}
                     autoplay={{
                         delay: 3000,
                         disableOnInteraction: false,
                     }}
                     coverflowEffect={{
-                        rotate: 50,
+                        rotate: 5,
                         stretch: 0,
                         depth: 100,
-                        modifier: 2.5,
+                        modifier: 1.5,
+                        slideShadows: true,
                     }}
                     breakpoints={{
                         320: {
                             slidesPerView: 1,
                             spaceBetween: 20,
+                            effect: "slide",
                         },
                         576: {
                             slidesPerView: 2,
                             spaceBetween: 30,
+                            effect: "slide",
                         },
                         720: {
                             slidesPerView: 3,
                             spaceBetween: 40,
+                            effect: "coverflow",
                         },
                         992: {
                             slidesPerView: 5,
                             spaceBetween: 50,
+                            effect: "coverflow",
                         },
                     }}
                     className="clients-swiper"
