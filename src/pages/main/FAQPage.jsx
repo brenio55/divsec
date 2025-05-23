@@ -66,7 +66,15 @@ function FAQPage() {
         },
         {
             question: "Is it possible to expand contracted services in the future?",
-            answer: "Absolutely. Our services are modular and scalable, allowing you to start with the essentials and expand as your business grows, without losing integration between solutions."
+            answer: "Absolutely. Our services are modular and scalable, allowing you to start with the essentials and expand as your business grows, without losing integration between solutions. Expansion plans may or may not be defined according to client needs."
+        },
+        {
+            question: "Do you work with small-scale projects?",
+            answer: "Yes, we serve clients of all sizes. Our solutions are customized according to each client's needs and budget, whether for small businesses or large corporations."
+        },
+        {
+            question: "What technologies do you use in projects?",
+            answer: "We use modern and robust technologies like React, Node.js, PHP, WordPress, among others. The choice of technology depends on the specific needs of the project, always prioritizing performance, security and scalability."
         }
     ];
 
