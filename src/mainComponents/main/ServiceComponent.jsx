@@ -13,14 +13,16 @@ function ServiceComponent(props){
         <>
         <article className="serviceComponentMain"> 
             <article className="serviceComponent">
-                <img src={imgSrc} alt={name} />
-                <h3>{name}</h3>
-                <p>{description}</p>
-
-                
+                <div className="serviceImageWrapper">
+                    <img src={imgSrc} alt={name} />
+                </div>
+                <div className="serviceContent">
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                </div>
             </article>
 
-            <a href={link}><button className="buttonPattern white squareBorder">Conhecer mais</button></a>
+            <a href={link}><button className="buttonPattern brand-gradient">Saiba Mais</button></a>
         </article>
         </>
     )

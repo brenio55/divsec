@@ -27,7 +27,7 @@ function Main() {
 
         <div className="flex center orcamentoButton" id="orcamentoButton" data-aos="fade-up" data-aos-duration="400">
           <a href='https://wa.me/558431902145' target='_blank' rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="400">
-            <button className="buttonPattern white">
+            <button className="buttonPattern brand-gradient">
               {language === 'pt' ? 'Solicitar orçamento' : 'Request a quote'}
             </button>
           </a>

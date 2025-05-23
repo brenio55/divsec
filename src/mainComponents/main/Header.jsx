@@ -51,14 +51,12 @@ function Header (){
                                     <li><a href="#home">{language === 'pt' ? 'Início' : 'Home'}</a></li>
                                     <li><a href="#services">{language === 'pt' ? 'Serviços' : 'Services'}</a></li>
                                     <li><a href="#clients">{language === 'pt' ? 'Clientes' : 'Clients'}</a></li>
-                                    <li><Link to="/faq">FAQ</Link></li>
                                     <li><Link to="/about">{language === 'pt' ? 'Quem Somos' : 'About Us'}</Link></li>
                                 </>
                             ) : (
                                 <>
                                     <li><Link to="/">{language === 'pt' ? 'Início' : 'Home'}</Link></li>
                                     <li><Link to="/about">{language === 'pt' ? 'Quem Somos' : 'About Us'}</Link></li>
-                                    <li><Link to="/faq">FAQ</Link></li>
                                 </>
                             )}
                         </ul>
@@ -89,14 +87,12 @@ function Header (){
                                 <li><a href="#home" onClick={toggleMobileMenu}>{language === 'pt' ? 'Início' : 'Home'}</a></li>
                                 <li><a href="#services" onClick={toggleMobileMenu}>{language === 'pt' ? 'Serviços' : 'Services'}</a></li>
                                 <li><a href="#clients" onClick={toggleMobileMenu}>{language === 'pt' ? 'Clientes' : 'Clients'}</a></li>
-                                <li><Link to="/faq" onClick={toggleMobileMenu}>FAQ</Link></li>
                                 <li><Link to="/about" onClick={toggleMobileMenu}>{language === 'pt' ? 'Quem Somos' : 'About Us'}</Link></li>
                             </>
                         ) : (
                             <>
                                 <li><Link to="/" onClick={toggleMobileMenu}>{language === 'pt' ? 'Início' : 'Home'}</Link></li>
                                 <li><Link to="/about" onClick={toggleMobileMenu}>{language === 'pt' ? 'Quem Somos' : 'About Us'}</Link></li>
-                                <li><Link to="/faq" onClick={toggleMobileMenu}>FAQ</Link></li>
                             </>
                         )}
                         <li>
