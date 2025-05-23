@@ -1,4 +1,5 @@
 import { useLanguage } from '../../context/LanguageContext';
+import { Link } from 'react-router-dom';
 
 function Footer(){
     const { language } = useLanguage();
@@ -15,9 +16,9 @@ function Footer(){
                         <div className="menuLeft">
                             <h2>DiVSeC</h2>
                             <ul>
-                                <li>{language === 'pt' ? 'Quem Somos' : 'About Us'}</li>
-                                <a href='#services'><li>{language === 'pt' ? 'Serviços' : 'Services'}</li></a>
-                                <li>FAQ</li>
+                                <li><Link to="/about">{language === 'pt' ? 'Quem Somos' : 'About Us'}</Link></li>
+                                <li><a href='#services'>{language === 'pt' ? 'Serviços' : 'Services'}</a></li>
+                                <li><Link to="/faq">FAQ</Link></li>
                             </ul>                    
                         </div>    
                     </div>                    
@@ -25,9 +26,9 @@ function Footer(){
                         <div className="menuRight">
                             <h2>{language === 'pt' ? 'Empresa' : 'Company'}</h2>
                             <ul>
-                                <li>{language === 'pt' ? 'Termos e Condições' : 'Terms and Conditions'}</li>
-                                <li>{language === 'pt' ? 'Política de Privacidade' : 'Privacy Policy'}</li>
-                                <a href='https://www.instagram.com/divsec.cloud/' target='_blank'><li>{language === 'pt' ? 'Contato' : 'Contact'}</li></a>
+                                <li><Link to="/terms">{language === 'pt' ? 'Termos e Condições' : 'Terms and Conditions'}</Link></li>
+                                <li><Link to="/privacy">{language === 'pt' ? 'Política de Privacidade' : 'Privacy Policy'}</Link></li>
+                                <li><a href='https://wa.me/558431902145' target='_blank' rel="noopener noreferrer">{language === 'pt' ? 'Contato' : 'Contact'}</a></li>
                             </ul>                    
                             
                         </div>    
@@ -36,14 +37,14 @@ function Footer(){
                                     <div className="flex titleFooter">
                                         <div>
                                             <h3>DIVSEC.CLOUD</h3>
-                                            <p>{language === 'pt' ? 'Dividindo Seções, Conquistando com Tecnologia em Nuvem' : 'Dividing Sections, Conquering with Cloud Technology'}</p>
+                                            <p>{language === 'pt' ? 'Soluções de TI para empresas de todos os portes' : 'IT solutions for businesses of all sizes'}</p>
                                         </div>                            
                                         <p>56.096.623/0001-64</p>
                                     </div>                    
 
                                     <div className="flex socialMediaIcons">
-                                        <a href='https://www.linkedin.com/in/brenio-filho/' target='_blank'><img src="img/linkedin.webp" alt="LinkedIn" /></a>
-                                        <a href='https://www.instagram.com/divsec.cloud/' target='_blank'><img src="img/instagramWhite.svg" alt="Instagram" /></a>
+                                        <a href='https://www.linkedin.com/in/brenio-filho/' target='_blank' rel="noopener noreferrer"><img src="img/linkedin.webp" alt="LinkedIn" /></a>
+                                        <a href='https://www.instagram.com/divsec.cloud/' target='_blank' rel="noopener noreferrer"><img src="img/instagramWhite.svg" alt="Instagram" /></a>
                                     </div>
                                     
                             </div>

@@ -6,10 +6,18 @@ const LanguageSwitcher = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  // Opções de idioma com emojis de bandeira
+  // Opções de idioma com imagens de bandeira
   const languages = [
-    { code: 'pt', name: 'Português', flag: '🇧🇷' },
-    { code: 'en', name: 'English', flag: '🇺🇸' }
+    { 
+      code: 'pt', 
+      name: 'Português', 
+      flag: 'https://flagcdn.com/w40/br.png' 
+    },
+    { 
+      code: 'en', 
+      name: 'English', 
+      flag: 'https://flagcdn.com/w40/us.png' 
+    }
   ];
 
   // Fechar o dropdown quando clicar fora dele
@@ -37,7 +45,13 @@ const LanguageSwitcher = () => {
         aria-label="Selecionar idioma"
         aria-expanded={isOpen}
       >
-        <span className="language-flag">{currentLanguage.flag}</span>
+        <img 
+          src={currentLanguage.flag} 
+          alt={`${currentLanguage.name} flag`} 
+          className="language-flag" 
+          width="24" 
+          height="18" 
+        />
         <span className="language-name">{currentLanguage.name}</span>
         <span className="dropdown-arrow">▼</span>
       </button>
@@ -53,7 +67,13 @@ const LanguageSwitcher = () => {
                   setIsOpen(false);
                 }}
               >
-                <span className="language-flag">{lang.flag}</span>
+                <img 
+                  src={lang.flag} 
+                  alt={`${lang.name} flag`} 
+                  className="language-flag" 
+                  width="24" 
+                  height="18" 
+                />
                 <span className="language-name">{lang.name}</span>
               </button>
             </li>

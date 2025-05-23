@@ -737,97 +737,96 @@ section.services .serviceComponentMain {
   align-items: center;
   gap: 20px;
 }
+section.services section.serviceGrid {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (min-width: 320px) {
+  section.services section.serviceGrid {
+    flex-direction: column;
+    gap: 45px;
+  }
+}
+
+@media (min-width: 576px) {
+  section.services section.serviceGrid {
+    flex-direction: column;
+    gap: 45px;
+  }
+}
+
+@media (min-width: 720px) {
+  section.services section.serviceGrid {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  section.services section.serviceGrid {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.services section.serviceGrid {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
 section.services article .serviceComponent {
   width: 415px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   gap: 20px;
+  height: 100%;
 }
-@media (min-width: 720px) and (max-width: 991px) {
-  section.services article .serviceComponent {
-    width: 220px;
-    gap: 15px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  section.services article .serviceComponent {
-    width: 300px;
-    gap: 15px;
-  }
-}
-@media (min-width: 1200px) {
-  section.services article .serviceComponent {
-    width: 415px;
-    gap: 20px;
-  }
-}
-section.services article .serviceComponent button {
-  margin: 0;
-}
-@media (min-width: 720px) and (max-width: 991px) {
-  section.services article .serviceComponent button {
-    padding: 10px 25px;
-    font-size: 14px;
-  }
-}
+
 section.services article .serviceComponent img {
-  max-height: 440px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
   border-radius: 13px;
 }
+
 @media (min-width: 320px) {
   section.services article .serviceComponent img {
-    max-height: 340px;
+    height: 250px;
   }
 }
+
 @media (min-width: 576px) {
   section.services article .serviceComponent img {
-    max-height: 380px;
+    height: 280px;
   }
 }
+
 @media (min-width: 720px) {
   section.services article .serviceComponent img {
-    max-height: 280px;
+    height: 250px;
   }
 }
+
 @media (min-width: 992px) {
   section.services article .serviceComponent img {
-    max-height: 350px;
+    height: 280px;
   }
 }
+
 @media (min-width: 1200px) {
   section.services article .serviceComponent img {
-    max-height: 440px;
-  }
-}
-section.services article .serviceComponent p {
-  font-size: 13px;
-  margin: 0 auto;
-  width: 80%;
-}
-@media (min-width: 320px) {
-  section.services article .serviceComponent p {
-    width: 60%;
-  }
-}
-@media (min-width: 576px) {
-  section.services article .serviceComponent p {
-    width: 70%;
-  }
-}
-@media (min-width: 720px) {
-  section.services article .serviceComponent p {
-    width: 90%;
-    font-size: 12px;
-  }
-}
-@media (min-width: 992px) {
-  section.services article .serviceComponent p {
-    width: 85%;
-    font-size: 12px;
+    height: 300px;
   }
 }
 @media (min-width: 1200px) {
@@ -891,42 +890,6 @@ section.services .servicesTitle {
 @media (min-width: 1200px) {
   section.services .servicesTitle {
     font-size: 3.4em;
-  }
-}
-section.services section.serviceGrid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-@media (min-width: 320px) {
-  section.services section.serviceGrid {
-    flex-direction: column;
-    gap: 45px;
-  }
-}
-@media (min-width: 576px) {
-  section.services section.serviceGrid {
-    flex-direction: column;
-    gap: 45px;
-  }
-}
-@media (min-width: 720px) {
-  section.services section.serviceGrid {
-    flex-direction: row;
-    gap: 15px;
-  }
-}
-@media (min-width: 992px) {
-  section.services section.serviceGrid {
-    flex-direction: row;
-    gap: 20px;
-  }
-}
-@media (min-width: 1200px) {
-  section.services section.serviceGrid {
-    flex-direction: row;
-    gap: 30px;
   }
 }
 

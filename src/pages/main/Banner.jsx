@@ -2,20 +2,20 @@
 import { useLanguage } from '../../context/LanguageContext';
 
 function Banner (){
-    const { t, language } = useLanguage();
+    const { language } = useLanguage();
 
     return (
         <>
             <section className="bannerPage" id="home">
                 <div className="banner" data-aos="fade-up" data-aos-duration="400">
                     <h2 data-aos="fade-up" data-aos-duration="400">
-                        {language === 'pt' ? 'Dividir em Seções para conquistar' : 'Divide into Sections to conquer'}
+                        {language === 'pt' ? 'Soluções de TI que transformam negócios' : 'IT solutions that transform businesses'}
                     </h2>
                     <h1 data-aos="fade-up" data-aos-duration="400">
                         {language === 'pt' ? (
-                            <>Crie seu <mark>Website</mark> ou <mark>Projeto artístico</mark> com a gente!</>
+                            <>Tecnologia <mark>estratégica</mark> para empresas de <mark>todos os portes</mark></>
                         ) : (
-                            <>Create your <mark>Website</mark> or <mark>Artistic Project</mark> with us!</>
+                            <>Strategic <mark>technology</mark> for businesses of <mark>all sizes</mark></>
                         )}
                     </h1>
                 </div>
@@ -23,12 +23,12 @@ function Banner (){
                 <div className='roller' data-aos="fade-up" data-aos-duration="400">
                     <h3 data-aos="fade-up" data-aos-duration="400">
                         {language === 'pt' 
-                            ? 'Seu site, música ou arte digital em nossas mãos, vem saber mais!' 
-                            : 'Your website, music or digital art in our hands, come learn more!'}
+                            ? 'Maximize seus resultados com soluções digitais personalizadas!' 
+                            : 'Maximize your results with customized digital solutions!'}
                     </h3>
                     <a href="#services" data-aos="zoom-in" data-aos-duration="400">
                         <button className='buttonPattern white'>
-                            {language === 'pt' ? 'INICIAR' : 'START'}
+                            {language === 'pt' ? 'DESCOBRIR' : 'DISCOVER'}
                         </button>
                     </a>
                 </div>
