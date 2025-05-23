@@ -17,7 +17,7 @@ function Footer(){
                             <h2>DiVSeC</h2>
                             <ul>
                                 <li><Link to="/about">{language === 'pt' ? 'Quem Somos' : 'About Us'}</Link></li>
-                                <li><a href='#services'>{language === 'pt' ? 'Serviços' : 'Services'}</a></li>
+                                <li><a href='/#services'>{language === 'pt' ? 'Serviços' : 'Services'}</a></li>
                                 <li><Link to="/faq">FAQ</Link></li>
                             </ul>                    
                         </div>    

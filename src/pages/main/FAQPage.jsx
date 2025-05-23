@@ -10,27 +10,27 @@ function FAQPage() {
     const ptFaqItems = [
         {
             question: "Quais tipos de serviços de TI a DiVSeC oferece?",
-            answer: "Oferecemos uma ampla gama de serviços de TI, incluindo desenvolvimento web, gestão de projetos de TI, gerenciamento de social media, suporte técnico, consultoria em TI, soluções de segurança digital e muito mais, adaptados para empresas de todos os portes."
+            answer: "Oferecemos uma ampla gama de serviços de TI, incluindo desenvolvimento web avançado, gestão de projetos de TI, suporte técnico, consultoria em TI, soluções de segurança digital, suporte de infraestrutura, e muito mais, adaptados para empresas de todos os portes."
         },
         {
             question: "Quanto tempo leva para desenvolver um website?",
-            answer: "O prazo depende da complexidade do projeto. Websites simples podem levar de 2 a 4 semanas, enquanto projetos mais complexos como e-commerces ou plataformas personalizadas podem levar de 1 a 3 meses. Sempre definimos prazos claros no início do projeto."
+            answer: "O prazo depende da complexidade do projeto. Websites simples podem levar de 2 a 4 semanas, enquanto projetos mais complexos como e-commerces ou plataformas personalizadas podem levar de 1 a 3 meses - a depender do tamanho do projeto. Sempre definimos prazos claros no início do projeto."
         },
         {
             question: "Como funciona o processo de pagamento?",
-            answer: "Trabalhamos com um sistema de 50% de entrada no início do projeto e os 50% restantes após a aprovação final. Para projetos maiores, podemos estabelecer cronogramas de pagamento em etapas."
+            answer: "Geralmente trabalhamos com um sistema de 50% de entrada no início do projeto e os 50% restantes após a aprovação final. Para projetos maiores, podemos estabelecer cronogramas de pagamento em etapas."
         },
         {
             question: "A DiVSeC oferece manutenção após a conclusão do projeto?",
-            answer: "Sim, oferecemos planos de manutenção e suporte contínuo para todos os nossos projetos. Isso inclui atualizações de segurança, correções de bugs e pequenas melhorias."
+            answer: "Sim, oferecemos planos de manutenção e suporte contínuo para todos os nossos projetos. Isso inclui atualizações de segurança, correções de bugs e pequenas melhorias, podendo ser definido um plano de manutenção por contrato ou por demanda."
         },
         {
             question: "Como garantem a segurança dos dados dos clientes?",
-            answer: "Seguimos rigorosamente as diretrizes da LGPD e implementamos medidas de segurança robustas, incluindo criptografia de dados, backups regulares, controle de acesso e monitoramento constante para proteger as informações dos nossos clientes."
+            answer: "Seguimos rigorosamente as diretrizes da LGPD e implementamos medidas de segurança robustas, incluindo criptografia de dados, backups regulares, controle de acesso e monitoramento constante para proteger as informações dos nossos clientes. Planos de segurança dentro de projetos podem ser definidos conforme a necessidade do cliente."
         },
         {
             question: "É possível expandir os serviços contratados no futuro?",
-            answer: "Absolutamente. Nossos serviços são modulares e escaláveis, permitindo que você comece com o essencial e expanda conforme seu negócio cresce, sem perder a integração entre as soluções."
+            answer: "Absolutamente. Nossos serviços são modulares e escaláveis, permitindo que você comece com o essencial e expanda conforme seu negócio cresce, sem perder a integração entre as soluções. Planos de expansão podem ser definidos ou não,conforme a necessidade do cliente."
         },
         {
             question: "Vocês trabalham com projetos de pequeno porte?",
@@ -67,14 +67,6 @@ function FAQPage() {
         {
             question: "Is it possible to expand contracted services in the future?",
             answer: "Absolutely. Our services are modular and scalable, allowing you to start with the essentials and expand as your business grows, without losing integration between solutions."
-        },
-        {
-            question: "Do you work with small-scale projects?",
-            answer: "Yes, we serve clients of all sizes. Our solutions are customized according to each client's needs and budget, whether for small businesses or large corporations."
-        },
-        {
-            question: "Which technologies do you use in your projects?",
-            answer: "We use modern and robust technologies such as React, Node.js, PHP, WordPress, among others. The choice of technology depends on the specific needs of the project, always prioritizing performance, security, and scalability."
         }
     ];
 
@@ -91,50 +83,38 @@ function FAQPage() {
 
     return (
         <>
-            <Header />
-            <div className="faq-page-container">
-                <div className="faq-page-banner" data-aos="fade-up" data-aos-duration="400">
-                    <h1>{language === 'pt' ? 'Perguntas Frequentes' : 'Frequently Asked Questions'}</h1>
-                </div>
+            <Header></Header>
+            <section className="new-faq-section" id="faq">
+                <h2 className="titlesIntro" data-aos="fade-up" data-aos-duration="400">
+                    {language === 'pt' ? (
+                    <>Perguntas <span className="purpleColor">Frequentes</span></>
+                ) : (
+                    <>Frequently <span className="purpleColor">Asked Questions</span></>
+                )}
+            </h2>
 
-                <div className="faq-page-content" data-aos="fade-up" data-aos-duration="400">
-                    <div className="faq-container">
-                        {faqItems.map((item, index) => (
-                            <div 
-                                key={index} 
-                                className={`faq-item ${openIndex === index ? 'active' : ''}`}
-                                data-aos="fade-up" 
-                                data-aos-duration="400" 
-                                data-aos-delay={index * 100}
-                            >
-                                <div 
-                                    className="faq-question" 
-                                    onClick={() => toggleFaq(index)}
-                                >
-                                    <h3>{item.question}</h3>
-                                    <span className="faq-toggle">{openIndex === index ? '-' : '+'}</span>
-                                </div>
-                                <div className={`faq-answer ${openIndex === index ? 'open' : ''}`}>
-                                    <p>{item.answer}</p>
-                                </div>
+            <div className="new-faq-container" data-aos="fade-up" data-aos-duration="400">
+                {faqItems.map((item, index) => (
+                    <div key={index} className="new-faq-item">
+                        <div 
+                            className="new-faq-question" 
+                            onClick={() => toggleFaq(index)}
+                        >
+                            <h3>{item.question}</h3>
+                            <span className="new-faq-icon">
+                                {openIndex === index ? '−' : '+'}
+                            </span>
+                        </div>
+                        {openIndex === index && (
+                            <div className="new-faq-answer">
+                                <p>{item.answer}</p>
                             </div>
-                        ))}
+                        )}
                     </div>
-                    <div className="faq-page-contact" data-aos="fade-up" data-aos-duration="400">
-                        <p>
-                            {language === 'pt' 
-                                ? 'Tem alguma dúvida que não encontrou aqui? Entre em contato conosco!' 
-                                : 'Have a question you didn\'t find here? Contact us!'}
-                        </p>
-                        <a href='https://wa.me/558431902145' target='_blank' rel="noopener noreferrer">
-                            <button className='buttonPattern white'>
-                                {language === 'pt' ? 'Fale Conosco' : 'Contact Us'}
-                            </button>
-                        </a>
-                    </div>
-                </div>
+                ))}
             </div>
-            <Footer />
+        </section>
+        <Footer></Footer>
         </>
     );
 }
