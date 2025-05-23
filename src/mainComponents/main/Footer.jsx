@@ -37,8 +37,9 @@ function Footer(){
                                     <div className="flex titleFooter">
                                         <div>
                                             <h3>DIVSEC.CLOUD</h3>
-                                            <p>{language === 'pt' ? 'Soluções de TI para empresas de todos os portes' : 'IT solutions for businesses of all sizes'}</p>
-                                        </div>                            
+                                            <p>{language === 'pt' ? 'Soluções de TI em nuvem para empresas de todos os portes' : 'IT Cloud Solutions for businesses of all sizes'}</p>
+                                        </div>            
+                                                     
                                         <p>56.096.623/0001-64</p>
                                     </div>                    
 

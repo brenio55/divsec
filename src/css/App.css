@@ -79,8 +79,59 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(6px);
   transition: all 0.3s ease;
-  /* Hamburger Menu Styles */
 }
+
+@media (min-width: 300px) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  header .logo {
+    width: 120px;
+    margin-left: 15px;
+  }
+  
+  header .logo img {
+    height: 28px;
+  }
+  
+  header .headerRight {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    gap: 10px;
+  }
+  
+  header .headerRight .desktop-nav,
+  header .headerRight .contact-button {
+    display: none;
+  }
+  
+  header .headerRight .hamburger-menu {
+    display: flex;
+  }
+  
+  header .headerRight .language-switcher {
+    display: flex;
+  }
+  
+  header .headerRight .language-dropdown {
+    display: flex;
+  }
+  
+  header .hamburger-menu {
+    width: 36px;
+    height: 36px;
+  }
+  
+  header .language-dropdown .language-dropdown-button {
+    padding: 6px 10px;
+    min-width: auto;
+  }
+}
+
 @media (min-width: 720px) and (max-width: 991px) {
   header {
     padding-top: 25px;
@@ -278,6 +329,7 @@ header .hamburger-icon.open span:nth-child(3) {
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
+    gap: 20px;
   }
   header .headerRight .desktop-nav {
     display: none;
@@ -428,11 +480,17 @@ header .hamburger-icon.open span:nth-child(3) {
     padding: 10px 30px;
     font-size: 14px;
   }
+  section.services.serviceComponentMain{
+    width: 277px;
+  }
 }
 @media (min-width: 576px) {
   .buttonPattern {
     padding: 12px 35px;
     font-size: 14px;
+  }
+  section.services.serviceComponentMain{
+    width: 337px;
   }
 }
 @media (min-width: 720px) {
@@ -440,6 +498,11 @@ header .hamburger-icon.open span:nth-child(3) {
     padding: 12px 35px;
     font-size: 14px;
   }
+  header .headerRight{
+    gap: 65px;
+  }
+
+  
 }
 @media (min-width: 992px) {
   .buttonPattern {
@@ -577,7 +640,7 @@ section.bannerPage .banner {
 }
 @media (min-width: 320px) {
   section.bannerPage .banner {
-    background-size: 300%;
+    background-size: 360%;
   }
 }
 @media (min-width: 576px) {
@@ -747,7 +810,7 @@ section.services {
 section.services .serviceComponentMain {
   display: flex;
   flex-direction: column;
-  width: 337px;
+  
   height: 440px;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 12px;
@@ -3096,5 +3159,42 @@ footer .copyrightFooter p {
 
   .about-section {
     padding: 15px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  header .headerRight .buttonPattern.brand-gradient {
+    display: none;
+  }
+
+  .mobile-menu .mobile-contact {
+    display: block;
+    background: linear-gradient(135deg, #b30ecf 0%, #7b1fa2 100%);
+    color: white;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 12px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width: 80%;
+    max-width: 250px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-menu .mobile-contact:hover {
+    background: linear-gradient(135deg, #d81b60 0%, #8e24aa 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(179, 14, 207, 0.3);
+  }
+}
+
+@media (min-width: 769px) {
+  header .headerRight .round {
+    display: block;
+  }
+
+  .mobile-menu .mobile-contact {
+    display: none;
   }
 }

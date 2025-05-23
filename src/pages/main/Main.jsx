@@ -31,7 +31,7 @@ function Main() {
             fontSize: "14px", 
             fontWeight: "100", 
             margin: "0px", 
-            background: "linear-gradient(135deg, #ffffff 0%, #b30ecf 50%,rgb(207, 153, 230) 100%)", 
+            background: "linear-gradient(135deg, #ffffff 0%,rgb(238, 229, 239) 50%,rgb(207, 153, 230) 100%)", 
             WebkitBackgroundClip: "text", 
             WebkitTextFillColor: "transparent",
             color: "#ffffff" // Fallback color
@@ -41,7 +41,7 @@ function Main() {
             fontSize: "14px", 
             fontWeight: "100", 
             margin: "5px", 
-            background: "linear-gradient(135deg, #ffffff 0%, #b30ecf 50%,rgb(210, 147, 237) 100%)", 
+            background: "linear-gradient(135deg, #ffffff 0%,rgb(213, 141, 226) 50%,rgb(210, 147, 237) 100%)", 
             WebkitBackgroundClip: "text", 
             WebkitTextFillColor: "transparent",
             color: "#ffffff" // Fallback color
