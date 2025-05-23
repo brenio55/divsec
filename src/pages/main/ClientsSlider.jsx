@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -28,6 +28,16 @@ function ClientsSlider() {
             name: "Etcotur", 
             logo: "/img/pastClients/etcoTur.png",
             url: "https://www.etcotur.com.br/"
+        },
+        { 
+            name: "IMED Club", 
+            logo: "/img/pastClients/logoimed.png",
+            url: "https://imedclube.com/"
+        },
+        { 
+            name: "EBS Bank", 
+            logo: "/img/pastClients/ebs.png",
+            url: "https://ebsbank.com.br/"
         }
     ];
 
@@ -47,13 +57,19 @@ function ClientsSlider() {
 
             <div className="clients-container" data-aos="fade-up" data-aos-duration="400">
                 <Swiper
-                    modules={[Autoplay]}
+                    modules={[Autoplay, EffectCoverflow]}
                     spaceBetween={50}
                     slidesPerView={4}
                     loop={true}
                     autoplay={{
                         delay: 3000,
                         disableOnInteraction: false,
+                    }}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 2.5,
                     }}
                     breakpoints={{
                         320: {
@@ -69,7 +85,7 @@ function ClientsSlider() {
                             spaceBetween: 40,
                         },
                         992: {
-                            slidesPerView: 4,
+                            slidesPerView: 5,
                             spaceBetween: 50,
                         },
                     }}

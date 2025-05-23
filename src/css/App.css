@@ -3199,3 +3199,7 @@ footer .copyrightFooter p {
     display: none;
   }
 }
+
+#clients > div > div{
+  padding: 15px 0;
+}
