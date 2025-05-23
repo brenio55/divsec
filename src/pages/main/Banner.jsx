@@ -27,7 +27,7 @@ function Banner (){
                             : 'Maximize your results with customized digital solutions!'}
                     </h3>
                     <a href="#services" data-aos="zoom-in" data-aos-duration="400">
-                        <button className='buttonPattern white'>
+                        <button  className="buttonPattern brand-gradient" style={{borderRadius: '30px', marginLeft: '15px', width: '200px'}}>
                             {language === 'pt' ? 'DESCOBRIR' : 'DISCOVER'}
                         </button>
                     </a>

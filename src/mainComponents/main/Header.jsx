@@ -64,7 +64,7 @@ function Header (){
                     
                     <div className="language-and-contact">
                         <LanguageSwitcher />
-                        <a href={isHomePage ? "#orcamentoButton" : "/#orcamentoButton"} className="contact-button round">
+                        <a href={isHomePage ? "#orcamentoButton" : "/#orcamentoButton"} className="buttonPattern brand-gradient" style={{borderRadius: '30px', marginLeft: '15px'}}>
                             {language === 'pt' ? 'Orçamento' : 'Quote'}
                         </a>
                     </div>

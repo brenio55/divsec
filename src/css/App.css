@@ -815,7 +815,7 @@ section.services .serviceComponentMain {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
   flex: 1;
-  display: -webkit-box;
+  /* display: -webkit-box; */
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -2507,7 +2507,7 @@ footer .copyrightFooter p {
 .buttonPattern.brand-gradient {
   background: white;
   color: black;
-  border: 2px solid white;
+  border: 2px solid transparent;
   padding: 12px 30px;
   border-radius: 8px;
   font-weight: 600;
@@ -2518,9 +2518,10 @@ footer .copyrightFooter p {
 .buttonPattern.brand-gradient:hover {
   background: linear-gradient(135deg, #b30ecf 0%, #7b1fa2 100%);
   color: white;
-  border-color: #b30ecf;
+  /* border-color: #b30ecf; */
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(179, 14, 207, 0.3);
+  border: 2px solid transparent;
 }
 
 /* Estilos para FAQ */
@@ -2753,4 +2754,196 @@ footer .copyrightFooter p {
 
 .swipper-wrapper {
   padding: 10px 0px 10px 0px;
+}
+
+/* ===== NOVO FAQ REFATORADO ===== */
+
+.new-faq-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.new-faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.new-faq-item {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.new-faq-item:hover {
+  border-color: rgba(179, 14, 207, 0.3);
+  box-shadow: 0 5px 15px rgba(179, 14, 207, 0.1);
+}
+
+.new-faq-question {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.new-faq-question:hover {
+  background: rgba(179, 14, 207, 0.1);
+}
+
+.new-faq-question h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  flex: 1;
+  padding-right: 20px;
+  line-height: 1.4;
+}
+
+.new-faq-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b30ecf;
+  transition: transform 0.3s ease, color 0.3s ease;
+  min-width: 30px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.new-faq-question:hover .new-faq-icon {
+  color: #d81b60;
+  transform: scale(1.1);
+}
+
+.new-faq-answer {
+  padding: 0 20px 20px 20px;
+  animation: fadeInDown 0.3s ease-out;
+}
+
+.new-faq-answer p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries para o novo FAQ */
+@media (min-width: 320px) {
+  .new-faq-section {
+    padding: 60px 15px;
+  }
+  
+  .new-faq-question {
+    padding: 15px;
+  }
+  
+  .new-faq-question h3 {
+    font-size: 0.9rem;
+    padding-right: 15px;
+  }
+  
+  .new-faq-answer {
+    padding: 0 15px 15px 15px;
+  }
+  
+  .new-faq-answer p {
+    font-size: 0.85rem;
+  }
+  
+  .new-faq-icon {
+    font-size: 1.3rem;
+    min-width: 25px;
+  }
+}
+
+@media (min-width: 576px) {
+  .new-faq-section {
+    padding: 70px 18px;
+  }
+  
+  .new-faq-question {
+    padding: 18px;
+  }
+  
+  .new-faq-question h3 {
+    font-size: 0.95rem;
+    padding-right: 18px;
+  }
+  
+  .new-faq-answer {
+    padding: 0 18px 18px 18px;
+  }
+  
+  .new-faq-answer p {
+    font-size: 0.9rem;
+  }
+  
+  .new-faq-icon {
+    font-size: 1.4rem;
+    min-width: 28px;
+  }
+}
+
+@media (min-width: 720px) {
+  .new-faq-section {
+    padding: 80px 20px;
+  }
+  
+  .new-faq-question {
+    padding: 20px;
+  }
+  
+  .new-faq-question h3 {
+    font-size: 1rem;
+    padding-right: 20px;
+  }
+  
+  .new-faq-answer {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .new-faq-answer p {
+    font-size: 0.95rem;
+  }
+  
+  .new-faq-icon {
+    font-size: 1.5rem;
+    min-width: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .new-faq-question h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Removendo estilos antigos do FAQ */
+.faq-section,
+.faq-container,
+.faq-item,
+.faq-question,
+.faq-answer,
+.faq-toggle {
+  display: none !important;
 }

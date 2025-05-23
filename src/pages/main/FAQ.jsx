@@ -72,12 +72,8 @@ function FAQ() {
     };
 
     return (
-        <section className="faq-section" id="faq">
-            <h2 
-                className="titlesIntro" 
-                data-aos="fade-up" 
-                data-aos-duration="400"
-            >
+        <section className="new-faq-section" id="faq">
+            <h2 className="titlesIntro" data-aos="fade-up" data-aos-duration="400">
                 {language === 'pt' ? (
                     <>Perguntas <span className="purpleColor">Frequentes</span></>
                 ) : (
@@ -85,25 +81,23 @@ function FAQ() {
                 )}
             </h2>
 
-            <div className="faq-container" data-aos="fade-up" data-aos-duration="400">
+            <div className="new-faq-container" data-aos="fade-up" data-aos-duration="400">
                 {faqItems.map((item, index) => (
-                    <div 
-                        key={index} 
-                        className={`faq-item ${openIndex === index ? 'active' : ''}`}
-                        data-aos="fade-up" 
-                        data-aos-duration="400" 
-                        data-aos-delay={index * 100}
-                    >
+                    <div key={index} className="new-faq-item">
                         <div 
-                            className="faq-question" 
+                            className="new-faq-question" 
                             onClick={() => toggleFaq(index)}
                         >
                             <h3>{item.question}</h3>
-                            <span className="faq-toggle">{openIndex === index ? '-' : '+'}</span>
+                            <span className="new-faq-icon">
+                                {openIndex === index ? '−' : '+'}
+                            </span>
                         </div>
-                        <div className={`faq-answer ${openIndex === index ? 'open' : ''}`}>
-                            <p>{item.answer}</p>
-                        </div>
+                        {openIndex === index && (
+                            <div className="new-faq-answer">
+                                <p>{item.answer}</p>
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>
