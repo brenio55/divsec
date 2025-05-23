@@ -81,7 +81,7 @@ function PrivacyPolicy() {
         },
         {
             title: "8. Contato do Encarregado de Proteção de Dados (DPO)",
-            content: "Para exercer seus direitos ou esclarecer dúvidas sobre o tratamento de seus dados pessoais, entre em contato com nosso DPO através do e-mail: dpo@divsec.com",
+            content: "Para exercer seus direitos ou esclarecer dúvidas sobre o tratamento de seus dados pessoais, entre em contato com nosso DPO através do e-mail: brenio@divsec.cloud",
             list: null
         },
         {
@@ -164,7 +164,7 @@ function PrivacyPolicy() {
         },
         {
             title: "8. Data Protection Officer (DPO) Contact",
-            content: "To exercise your rights or clarify doubts about the processing of your personal data, contact our DPO through email: dpo@divsec.com",
+            content: "To exercise your rights or clarify doubts about the processing of your personal data, contact our DPO through email: brenio@divsec.cloud",
             list: null
         },
         {
