@@ -15,13 +15,19 @@ function Services(){
         {
             name: "Gestão Avançada em Projetos de TI",
             description: "Maximize a eficiência do seu negócio com nossa gestão especializada de projetos de TI. Implementamos metodologias ágeis para garantir entregas de valor dentro do prazo e orçamento.",
-            imgSrc: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            imgSrc: "https://images.unsplash.com/photo-1590402494756-10c265b9d736?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            link: "#orcamentoButton"
+        },
+        {
+            name: "Design & UX / UI",
+            description: "Procurando uma capa pra seu álbum, ou simplesmente melhores imagens para seu negócio ou site? Você está precisando de um designer ou de um pouco de Inteligência Artificial!",
+            imgSrc: "/img/brenio55_something_that_represents_a_gamma_of_colors_digital_ar_ca81437d-4187-474a-855f-d6.webp",
             link: "#orcamentoButton"
         },
         {
             name: "Gerenciamento de Social Media",
             description: "Potencialize sua marca nas redes sociais! Criamos estratégias personalizadas que conectam seu negócio ao público ideal, aumentando o engajamento e convertendo seguidores em clientes.",
-            imgSrc: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
+            imgSrc: "https://images.unsplash.com/photo-1643503640904-75c1a2093570?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             link: "#orcamentoButton"
         },
         {
@@ -29,13 +35,8 @@ function Services(){
             description: "Exponha seus sentimentos com uma produção musical completa, gravamos sua música, compomos, produzimos, mixamos e masterizamos. Transforme sua arte em realidade!",
             imgSrc: "/img/digital-mixer-recording-studio-with-computer-recording-music.webp",
             link: "#orcamentoButton"
-        },
-        {
-            name: "Design e UX / UI",
-            description: "Procurando uma capa pra seu álbum, ou simplesmente melhores imagens para seu negócio ou site? Você está precisando de um designer ou de um pouco de Inteligência Artificial!",
-            imgSrc: "/img/brenio55_something_that_represents_a_gamma_of_colors_digital_ar_ca81437d-4187-474a-855f-d6.webp",
-            link: "#orcamentoButton"
         }
+       
     ];
 
     // Serviços em inglês
@@ -49,13 +50,19 @@ function Services(){
         {
             name: "Advanced IT Project Management",
             description: "Maximize your business efficiency with our specialized IT project management. We implement agile methodologies to ensure value deliveries within time and budget.",
-            imgSrc: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            imgSrc: "https://images.unsplash.com/photo-1590402494756-10c265b9d736?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            link: "#orcamentoButton"
+        },
+        {
+            name: "Design & UX / UI",
+            description: "Looking for a cover for your album, or simply better images for your business or website? You need a designer or a little Artificial Intelligence!",
+            imgSrc: "/img/brenio55_something_that_represents_a_gamma_of_colors_digital_ar_ca81437d-4187-474a-855f-d6.webp",
             link: "#orcamentoButton"
         },
         {
             name: "Social Media Management",
             description: "Boost your brand on social networks! We create personalized strategies that connect your business to the ideal audience, increasing engagement and converting followers into customers.",
-            imgSrc: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
+            imgSrc: "https://images.unsplash.com/photo-1643503640904-75c1a2093570?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             link: "#orcamentoButton"
         },
         {
@@ -63,13 +70,8 @@ function Services(){
             description: "Express your feelings with complete music production, we record your music, compose, produce, mix and master. Transform your art into reality!",
             imgSrc: "/img/digital-mixer-recording-studio-with-computer-recording-music.webp",
             link: "#orcamentoButton"
-        },
-        {
-            name: "Design / AI Art",
-            description: "Looking for a cover for your album, or simply better images for your business or website? You need a designer or a little Artificial Intelligence!",
-            imgSrc: "/img/brenio55_something_that_represents_a_gamma_of_colors_digital_ar_ca81437d-4187-474a-855f-d6.webp",
-            link: "#orcamentoButton"
         }
+       
     ];
 
     // Seleciona os serviços com base no idioma atual
