@@ -13,7 +13,7 @@ function ClientsSlider() {
         { 
             name: "HDS Serviço", 
             logo: "/img/pastClients/hds.png",
-            url: "https://hdsservico.com.br/"
+            url: "https://hds-six.vercel.app/"
         },
         { 
             name: "Laio Envelopamento", 
