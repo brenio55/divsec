@@ -83,6 +83,43 @@ function Ratings(){
                         />
                     </div>
                 ))}
+
+                <div className="moreRatings flex" style={{ justifyContent: 'center', alignItems: 'center', gap: '10px' , flexDirection: 'column'}}>
+                    <div>
+                        <h3>Estas e mais avaliações você pode encontrar nos perfis</h3>
+                            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '15px' , flexDirection: 'row'}} >
+                                <a href='https://www.linkedin.com/in/brenio-filho/#recommendations' target='_blank'>
+                                    <img src="/img/linkedinLogo.png" alt="fiverr logo" style={{ width: '130px', borderRadius: '5px', marginBottom: '0px', backgroundColor: 'white', padding: '10px 10px' }}/>
+                                </a>
+                                &
+                                <a href='https://br.fiverr.com/brenio55?public_mode=true#reviews_header_as_seller' target='_blank'>
+                                    <img src="/img/fiverr.jpg" alt="fiverr logo" style={{ width: '130px', borderRadius: '5px', marginBottom: '0px' }}/>
+                                </a>
+                            </div>
+                        <h3>de <span style={{
+                                            
+                                            fontWeight: "bold", 
+                                            margin: "0px", 
+                                            background: "linear-gradient(135deg, #ea00ffff 0%, #d442f5 70%, #cd39e7ff 60%,rgb(213, 147, 241) 100%)", 
+                                            WebkitBackgroundClip: "text", 
+                                            WebkitTextFillColor: "transparent",
+                                            textShadow: "0 0 15px rgba(179, 14, 207, 0.3)",
+                                            color: "#ffffff" // Fallback color
+                                        }}>Brenio Filho</span> — nosso principal desenvolvedor.</h3>
+                    </div>
+                    <br></br>
+                    <h3 style={{marginBottom: '31px', marginTop: '-65px'}}>
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '15px' , flexDirection: 'row'}} >
+                             <a href='https://www.linkedin.com/in/brenio-filho/#recommendations' target='_blank'>
+                                <button className='buttonPattern brand-gradient'>Ver avaliações do Linkedin</button>
+                            </a>       
+                            <a href='https://br.fiverr.com/brenio55?public_mode=true#reviews_header_as_seller' target='_blank'>
+                                <button className='buttonPattern brand-gradient'>Ver avaliações do Fiverr</button>
+                            </a>     
+                        </div>
+                    </h3>
+                </div>
+                
             </div>
         </section>
         </>
