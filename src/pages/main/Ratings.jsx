@@ -53,8 +53,27 @@ function Ratings(){
         }
     ];
     
+    // Conteúdo adicional em português
+    const ptMoreRatings = {
+        findMore: "Estas e mais avaliações você pode encontrar no",
+        by: "nos perfis de",
+        role: "nosso principal desenvolvedor.",
+        linkedinButton: "Ver avaliações do Linkedin",
+        fiverrButton: "Ver avaliações do Fiverr"
+    };
+
+    // Conteúdo adicional em inglês
+    const enMoreRatings = {
+        findMore: "These and more reviews can be found on",
+        by: "on the profiles of",
+        role: "our lead developer.",
+        linkedinButton: "See LinkedIn Reviews",
+        fiverrButton: "See Fiverr Reviews"
+    };
+
     // Seleciona os depoimentos com base no idioma atual
     const testimonials = language === 'pt' ? ptTestimonials : enTestimonials;
+    const moreRatings = language === 'pt' ? ptMoreRatings : enMoreRatings;
 
     return (
         <>
@@ -86,18 +105,17 @@ function Ratings(){
 
                 <div className="moreRatings flex" style={{ justifyContent: 'center', alignItems: 'center', gap: '10px' , flexDirection: 'column'}}>
                     <div>
-                        <h3>Estas e mais avaliações você pode encontrar nos perfis</h3>
+                        <h3>{moreRatings.findMore}</h3>
                             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '15px' , flexDirection: 'row'}} >
                                 <a href='https://www.linkedin.com/in/brenio-filho/#recommendations' target='_blank'>
-                                    <img src="/img/linkedinLogo.png" alt="fiverr logo" style={{ width: '130px', borderRadius: '5px', marginBottom: '0px', backgroundColor: 'white', padding: '10px 10px' }}/>
+                                    <img src="/img/linkedinLogo.png" alt="LinkedIn logo" style={{ width: '130px', borderRadius: '5px', marginBottom: '0px', backgroundColor: 'white', padding: '10px 10px' }}/>
                                 </a>
                                 &
                                 <a href='https://br.fiverr.com/brenio55?public_mode=true#reviews_header_as_seller' target='_blank'>
-                                    <img src="/img/fiverr.jpg" alt="fiverr logo" style={{ width: '130px', borderRadius: '5px', marginBottom: '0px' }}/>
+                                    <img src="/img/fiverr.jpg" alt="Fiverr logo" style={{ width: '130px', borderRadius: '5px', marginBottom: '0px' }}/>
                                 </a>
                             </div>
-                        <h3>de <span style={{
-                                            
+                        <h3>{moreRatings.by} <span style={{
                                             fontWeight: "bold", 
                                             margin: "0px", 
                                             background: "linear-gradient(135deg, #ea00ffff 0%, #d442f5 70%, #cd39e7ff 60%,rgb(213, 147, 241) 100%)", 
@@ -105,16 +123,16 @@ function Ratings(){
                                             WebkitTextFillColor: "transparent",
                                             textShadow: "0 0 15px rgba(179, 14, 207, 0.3)",
                                             color: "#ffffff" // Fallback color
-                                        }}>Brenio Filho</span> — nosso principal desenvolvedor.</h3>
+                                        }}>Brenio Filho</span> — {moreRatings.role}</h3>
                     </div>
                     <br></br>
-                    <h3 style={{marginBottom: '31px', marginTop: '-65px'}}>
+                    <h3 style={{marginBottom: '31px', marginTop: '-45px'}}>
                         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '15px' , flexDirection: 'row'}} >
                              <a href='https://www.linkedin.com/in/brenio-filho/#recommendations' target='_blank'>
-                                <button className='buttonPattern brand-gradient'>Ver avaliações do Linkedin</button>
+                                <button className='buttonPattern brand-gradient'>{moreRatings.linkedinButton}</button>
                             </a>       
                             <a href='https://br.fiverr.com/brenio55?public_mode=true#reviews_header_as_seller' target='_blank'>
-                                <button className='buttonPattern brand-gradient'>Ver avaliações do Fiverr</button>
+                                <button className='buttonPattern brand-gradient'>{moreRatings.fiverrButton}</button>
                             </a>     
                         </div>
                     </h3>
