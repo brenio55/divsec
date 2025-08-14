@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import Header from '../../mainComponents/main/Header';
 import Footer from '../../mainComponents/main/Footer';
@@ -88,6 +88,10 @@ function FAQPage() {
     const toggleFaq = (index) => {
         setOpenIndex(openIndex === index ? null : index);
     };
+
+     useEffect(() => {
+            window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>

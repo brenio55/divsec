@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import Header from '../../mainComponents/main/Header';
 import Footer from '../../mainComponents/main/Footer';
@@ -173,6 +173,10 @@ function PrivacyPolicy() {
             list: null
         }
     ];
+
+     useEffect(() => {
+            window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
