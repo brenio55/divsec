@@ -622,48 +622,44 @@ span.purpleColor {
 
 section.bannerPage {
   position: relative;
-  height: 100vh;
+  height: 110vh;
   z-index: 0;
   overflow: hidden;
 }
 section.bannerPage .banner {
   background-image: url("/img/background.jpg");
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   text-align: center;
-  height: 100dvh;
+  height: 110dvh;
   background-repeat: no-repeat;
-  
-  background-position: bottom;
+  background-position: center bottom;
 }
 @media (min-width: 320px) {
   section.bannerPage .banner {
-    background-size: 360%;
+    padding-top: 20px;
   }
 }
 @media (min-width: 576px) {
   section.bannerPage .banner {
-    background-size: 200%;
+    padding-top: 30px;
   }
 }
 @media (min-width: 720px) {
   section.bannerPage .banner {
-    background-size: 150%;
     padding-top: 80px;
   }
 }
 @media (min-width: 992px) {
   section.bannerPage .banner {
-    background-size: 120%;
     padding-top: 60px;
   }
 }
 @media (min-width: 1200px) {
   section.bannerPage .banner {
-    background-size: 100%;
     padding-top: 40px;
   }
 }
