@@ -7,70 +7,70 @@ function Services(){
     // Serviços em português
     const ptServices = [
         {
-            name: "Desenvolvimento Web Avançado",
-            description: "Faça seu website conosco, expondo o seu trabalho para mais pessoas e alcançando um número maior de vendas ou leads para seu negócio! Trabalhamos desde landing pages a lojas online e projetos complexos.",
+            name: "Desenvolvimento de Software e Integrações",
+            description: "Criamos aplicativos sob medida, sistemas web e integrações complexas. De landing pages a plataformas robustas, transformamos sua ideia em realidade tecnológica.",
             imgSrc: "/img/close-up-image-programer-working-his-desk-office.webp",
             link: "#orcamentoButton"
         },
         {
-            name: "Gestão Avançada em Projetos de TI",
-            description: "Maximize a eficiência do seu negócio com nossa gestão especializada de projetos de TI. Implementamos metodologias ágeis para garantir entregas de valor dentro do prazo e orçamento.",
+            name: "Gestão de TI Avançada",
+            description: "Gestão completa de servidores, suporte técnico com helpdesk (gestão de chamados) e manutenção contínua de sites e sistemas. Focamos na sua infraestrutura ou projeto, para você focar diretamente no seu negócio.",
             imgSrc: "https://images.unsplash.com/photo-1590402494756-10c265b9d736?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             link: "#orcamentoButton"
         },
         {
-            name: "Design & UX / UI",
-            description: "Procurando uma capa pra seu álbum, ou simplesmente melhores imagens para seu negócio ou site? Você está precisando de um designer ou de um pouco de Inteligência Artificial!",
+            name: "Design de Interface e Experiência (UI/UX)",
+            description: "Criamos interfaces modernas e intuitivas para sites e aplicativos. Unimos estética e funcionalidade para maximizar a conversão e o engajamento do seu público.",
             imgSrc: "/img/brenio55_something_that_represents_a_gamma_of_colors_digital_ar_ca81437d-4187-474a-855f-d6.webp",
             link: "#orcamentoButton"
         },
-        {
-            name: "Gerenciamento de Social Media",
-            description: "Potencialize sua marca nas redes sociais! Criamos estratégias personalizadas que conectam seu negócio ao público ideal, aumentando o engajamento e convertendo seguidores em clientes.",
-            imgSrc: "https://images.unsplash.com/photo-1643503640904-75c1a2093570?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            link: "#orcamentoButton"
-        },
-        {
-            name: "Consultoria em Produção Musical",
-            description: "Exponha seus sentimentos com uma produção musical completa, gravamos sua música, compomos, produzimos, mixamos e masterizamos. Transforme sua arte em realidade!",
-            imgSrc: "/img/digital-mixer-recording-studio-with-computer-recording-music.webp",
-            link: "#orcamentoButton"
-        }
+        // {
+        //     name: "Gerenciamento de Social Media",
+        //     description: "Potencialize sua marca nas redes sociais! Criamos estratégias personalizadas que conectam seu negócio ao público ideal, aumentando o engajamento e convertendo seguidores em clientes.",
+        //     imgSrc: "https://images.unsplash.com/photo-1643503640904-75c1a2093570?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        //     link: "#orcamentoButton"
+        // },
+        // {
+        //     name: "Consultoria em Produção Musical",
+        //     description: "Exponha seus sentimentos com uma produção musical completa, gravamos sua música, compomos, produzimos, mixamos e masterizamos. Transforme sua arte em realidade!",
+        //     imgSrc: "/img/digital-mixer-recording-studio-with-computer-recording-music.webp",
+        //     link: "#orcamentoButton"
+        // }
        
     ];
 
     // Serviços em inglês
     const enServices = [
         {
-            name: "Advanced Web Development",
-            description: "Create your website with us, exposing your work to more people and achieving greater sales or leads for your business! We work from landing pages to online stores and complex projects.",
+            name: "Software Development & Integrations",
+            description: "We build custom apps, web systems, and complex integrations. From landing pages to robust platforms, we turn your ideas into technological reality.",
             imgSrc: "/img/close-up-image-programer-working-his-desk-office.webp",
             link: "#orcamentoButton"
         },
         {
-            name: "Advanced IT Project Management",
-            description: "Maximize your business efficiency with our specialized IT project management. We implement agile methodologies to ensure value deliveries within time and budget.",
+            name: "Advanced IT Management",
+            description: "Complete server management, technical support with helpdesk (ticketing system), and continuous maintenance for websites and systems. We focus on your infrastructure or project so you can focus directly on your business.",
             imgSrc: "https://images.unsplash.com/photo-1590402494756-10c265b9d736?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             link: "#orcamentoButton"
         },
         {
-            name: "Design & UX / UI",
-            description: "Looking for a cover for your album, or simply better images for your business or website? You need a designer or a little Artificial Intelligence!",
+            name: "User Interface & Experience Design (UI/UX)",
+            description: "We create modern, intuitive, and user-centric interfaces for websites and applications. We combine aesthetics with functionality to maximize conversions and audience engagement.",
             imgSrc: "/img/brenio55_something_that_represents_a_gamma_of_colors_digital_ar_ca81437d-4187-474a-855f-d6.webp",
             link: "#orcamentoButton"
         },
-        {
-            name: "Social Media Management",
-            description: "Boost your brand on social networks! We create personalized strategies that connect your business to the ideal audience, increasing engagement and converting followers into customers.",
-            imgSrc: "https://images.unsplash.com/photo-1643503640904-75c1a2093570?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            link: "#orcamentoButton"
-        },
-        {
-            name: "Music Production",
-            description: "Express your feelings with complete music production, we record your music, compose, produce, mix and master. Transform your art into reality!",
-            imgSrc: "/img/digital-mixer-recording-studio-with-computer-recording-music.webp",
-            link: "#orcamentoButton"
-        }
+        // {
+        //     name: "Social Media Management",
+        //     description: "Boost your brand on social networks! We create personalized strategies that connect your business to the ideal audience, increasing engagement and converting followers into customers.",
+        //     imgSrc: "https://images.unsplash.com/photo-1643503640904-75c1a2093570?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        //     link: "#orcamentoButton"
+        // },
+        // {
+        //     name: "Music Production",
+        //     description: "Express your feelings with complete music production, we record your music, compose, produce, mix and master. Transform your art into reality!",
+        //     imgSrc: "/img/digital-mixer-recording-studio-with-computer-recording-music.webp",
+        //     link: "#orcamentoButton"
+        // }
        
     ];
 
