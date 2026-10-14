@@ -69,6 +69,10 @@ section.projects .servicesTitle {
 
 .projectSlides {
     position: relative;
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-select: none;
     aspect-ratio: 16 / 10;
     overflow: hidden;
     border-radius: 0 0 15px 15px;
@@ -100,25 +104,52 @@ section.projects .servicesTitle {
     bottom: 12px;
     transform: translateX(-50%);
     display: flex;
-    gap: 6px;
-    padding: 5px 9px;
+    gap: 2px;
+    padding: 2px 6px;
     border-radius: 99px;
     background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(4px);
+    z-index: 1;
 }
 
-.projectDots span {
+/* Botão com área de toque maior que o ponto visível */
+.projectDots button {
+    position: relative;
+    width: 22px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.projectDots button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 6px;
     height: 6px;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.45);
     transition: all 0.3s;
 }
 
-.projectDots span.active {
+.projectDots button:hover::before {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.projectDots button.active::before {
     width: 18px;
     border-radius: 6px;
     background: #fff;
+}
+
+.projectDots button:focus-visible {
+    outline: 2px solid #b30ecf;
+    outline-offset: -2px;
+    border-radius: 8px;
 }
 
 /* Logo do cliente no canto inferior externo (esquerdo nos blocos da esquerda, direito nos da direita) */
@@ -192,6 +223,30 @@ section.projects .servicesTitle {
     line-height: 1.05;
     font-weight: 800;
     text-wrap: balance;
+}
+
+.projectName a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hover/foco: o nome vira um arco-íris animado nas cores da DiVSeC e abre o projeto */
+.projectName a:hover,
+.projectName a:focus-visible {
+    background-image: linear-gradient(90deg, #ffffff, #d442f5, #b30ecf, #6830a9, #7a64ff, #3fa9f5, #7a64ff, #6830a9, #b30ecf, #d442f5, #ffffff);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: projectRainbow 22s ease-in-out infinite alternate;
+    outline: none;
+}
+
+@keyframes projectRainbow {
+    from { background-position: 0% 50%; }
+    to { background-position: 100% 50%; }
 }
 
 .projectDescription {
@@ -285,7 +340,13 @@ section.projects .servicesTitle {
 
 @media (prefers-reduced-motion: reduce) {
     .projectSlides img,
-    .projectDots span {
+    .projectDots button::before {
         transition: none;
+    }
+
+    .projectName a:hover,
+    .projectName a:focus-visible {
+        animation: none;
+        background-size: 100% 100%;
     }
 }

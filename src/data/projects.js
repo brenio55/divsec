@@ -1,6 +1,7 @@
 // Projetos exibidos na seção "Projetos" da home.
 // Prints em /public/img/projects/<slug>/01..05.webp e logo do cliente na mesma pasta.
 // type: 'web' (print de site/sistema, com moldura de navegador) | 'phone' (app mobile, já vem em moldura de celular)
+// url: site/app atual do projeto (opcional; sem url o nome não é clicável)
 // logoTheme: fundo do selo da logo ('light' para logos escuras, 'dark' para logos brancas)
 
 const shots = (slug, count = 5) =>
@@ -9,6 +10,7 @@ const shots = (slug, count = 5) =>
 export const projects = [
     {
         slug: 'imed',
+        url: 'https://imedhealth.com.br/',
         kicker: 'EBS Bank',
         name: 'Imed Clube',
         type: 'web',
@@ -23,6 +25,7 @@ export const projects = [
     },
     {
         slug: 'aluguemelhor',
+        url: 'https://play.google.com/store/apps/details?id=com.app.aluguemelhor&hl=pt_BR',
         kicker: 'EBS Bank',
         name: 'Alugue Melhor',
         type: 'phone',
@@ -37,6 +40,7 @@ export const projects = [
     },
     {
         slug: 'agape',
+        url: 'https://play.google.com/store/apps/details?id=com.app.agape',
         kicker: 'EBS Bank',
         name: 'Ágape',
         type: 'phone',
@@ -51,6 +55,7 @@ export const projects = [
     },
     {
         slug: 'hds',
+        url: 'https://hds-six.vercel.app/',
         name: 'HDS Serviço Industrial',
         type: 'web',
         logo: '/img/projects/hds/logo.png',
@@ -64,6 +69,7 @@ export const projects = [
     },
     {
         slug: 'etcotur',
+        url: 'https://etcotur.com.br/',
         name: 'Etco Tur',
         type: 'web',
         logo: '/img/projects/etcotur/logo.png',
@@ -76,7 +82,22 @@ export const projects = [
         images: shots('etcotur')
     },
     {
+        slug: 'sorbara',
+        url: 'https://www.antoniosorbara.com/',
+        name: 'Antonio Sorbara',
+        type: 'web',
+        logo: '/img/projects/sorbara/logo.png',
+        logoTheme: 'dark',
+        sector: { pt: 'Consultoria Estratégica', en: 'Strategy Consulting' },
+        description: {
+            pt: 'Site institucional de consultoria para C-Level, apresentando abordagens de atuação, formas de trabalho, clientes atendidos e contato direto para quem quer transformar problemas complexos em soluções práticas.',
+            en: 'Corporate website for a C-Level consulting practice, presenting approaches, ways of working, clients served and direct contact for those who want to turn complex problems into practical solutions.'
+        },
+        images: shots('sorbara')
+    },
+    {
         slug: 'laio',
+        url: 'https://laioenvelopamento.com.br/',
         name: 'Laio Envelopamento',
         type: 'web',
         logo: '/img/projects/laio/logo.webp',
@@ -90,6 +111,7 @@ export const projects = [
     },
     {
         slug: 'siepp',
+        url: 'https://siepp.divsec.cloud/',
         name: 'SIEPP',
         type: 'web',
         logo: '/img/projects/siepp/logo.webp',

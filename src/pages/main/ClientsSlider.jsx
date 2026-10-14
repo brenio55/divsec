@@ -39,6 +39,30 @@ function ClientsSlider() {
             name: "EBS Bank", 
             logo: "/img/pastClients/ebs.png",
             url: "https://ebsbank.com.br/"
+        },
+        { 
+            name: "SIEPP", 
+            logo: "/img/projects/siepp/logo.webp",
+            url: "https://siepp.divsec.cloud/"
+        },
+        { 
+            name: "Scale Clinic", 
+            logo: "/img/projects/scale/logo.png"
+        },
+        { 
+            name: "Alugue Melhor", 
+            logo: "/img/projects/aluguemelhor/logo.png",
+            url: "https://play.google.com/store/apps/details?id=com.app.aluguemelhor&hl=pt_BR"
+        },
+        { 
+            name: "Ágape", 
+            logo: "/img/projects/agape/logo.webp",
+            url: "https://play.google.com/store/apps/details?id=com.app.agape"
+        },
+        { 
+            name: "Antonio Sorbara", 
+            logo: "/img/projects/sorbara/logo.png",
+            url: "https://www.antoniosorbara.com/"
         }
     ];
 
@@ -101,16 +125,24 @@ function ClientsSlider() {
                 >
                     {clients.map((client, index) => (
                         <SwiperSlide key={index}>
-                            <a 
-                                href={client.url} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="client-link"
-                            >
-                                <div className="client-logo">
-                                    <img src={client.logo} alt={client.name} />
+                            {client.url ? (
+                                <a 
+                                    href={client.url} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="client-link"
+                                >
+                                    <div className="client-logo">
+                                        <img src={client.logo} alt={client.name} />
+                                    </div>
+                                </a>
+                            ) : (
+                                <div className="client-link">
+                                    <div className="client-logo">
+                                        <img src={client.logo} alt={client.name} />
+                                    </div>
                                 </div>
-                            </a>
+                            )}
                         </SwiperSlide>
                     ))}
                 </Swiper>
