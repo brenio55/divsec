@@ -2167,12 +2167,12 @@ footer{
     }
 }
 
-
-
-
-
-
-
-
-
-
+// Telas acima de 1920px (ou zoom reduzido): o body fica limitado a 1920px e centralizado,
+// então o header fixo precisa acompanhar esse mesmo contêiner (senão estoura a direita).
+@media (min-width: 1921px) {
+  header {
+    max-width: 1920px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
