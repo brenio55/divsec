@@ -225,28 +225,31 @@ section.projects .servicesTitle {
     text-wrap: balance;
 }
 
-.projectName a {
+.projectNameText {
     color: inherit;
     text-decoration: none;
+}
+
+a.projectNameText {
     cursor: pointer;
 }
 
 /* Hover/foco: o nome vira um arco-íris animado nas cores da DiVSeC e abre o projeto */
-.projectName a:hover,
-.projectName a:focus-visible {
+.projectNameText:hover,
+.projectNameText:focus-visible {
     background-image: linear-gradient(90deg, #ffffff, #d442f5, #b30ecf, #6830a9, #7a64ff, #3fa9f5, #7a64ff, #6830a9, #b30ecf, #d442f5, #ffffff);
-    background-size: 400% 100%;
+    background-size: 300% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    animation: projectRainbow 22s ease-in-out infinite alternate;
+    animation: projectRainbow 16s linear infinite;
     outline: none;
 }
 
 @keyframes projectRainbow {
     from { background-position: 0% 50%; }
-    to { background-position: 100% 50%; }
+    to { background-position: 300% 50%; }
 }
 
 .projectDescription {
@@ -344,8 +347,8 @@ section.projects .servicesTitle {
         transition: none;
     }
 
-    .projectName a:hover,
-    .projectName a:focus-visible {
+    .projectNameText:hover,
+    .projectNameText:focus-visible {
         animation: none;
         background-size: 100% 100%;
     }

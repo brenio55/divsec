@@ -11,24 +11,28 @@ function Ratings(){
             img: "img/ratings/tenor.webp",
             name: "Tenor Ivanhoe",
             location: "Suécia",
+            flag: "se",
             review: "Um autor jovem, energético e talentoso que ouve a opinião do cliente e faz um trabalho interessante."
         },
         {
             img: "img/ratings/cris.webp",
             name: "Ashen",
             location: "Reino Unido",
+            flag: "gb",
             review: "Mais um trabalho brilhante, definitivamente quero trabalhar com ele novamente."
         },
         {
             img: "img/ratings/kelleemorris.webp",
             name: "Kellee Morris",
             location: "Estados Unidos",
+            flag: "us",
             review: "Brenio foi ótimo na comunicação e deu vida à minha ideia. Ele ouviu os detalhes que eu queria para meu logo e até me deu algumas outras opções com seu próprio toque. Ele deu uma data estimada de entrega e não ultrapassou isso. Brenio é ótimo e faz um trabalho incrível!"
         },
         {
             img: "img/ratings/freedomTrail.webp",
             name: "Off-Road PowderCustom",
             location: "Estados Unidos",
+            flag: "us",
             review: "Brenio é uma ótima pessoa para trabalhar. Esta é minha segunda compra e ele fez exatamente o que pedi e fez isso no prazo e dentro do orçamento nas duas vezes. Obrigado Brenio, voltarei em breve! Ótimo trabalho."
         },
         {
@@ -36,13 +40,15 @@ function Ratings(){
             imgContain: true,
             name: "Antonio Sorbara",
             location: "Brasil - SP",
+            flag: "br",
             review: "Brenio é um profissional excelente. O contratei varias vezes, sempre prestativo, caprichoso nas entregas e acessivel para dúvidas. Nao só recomendo, como continuarei contratando!"
         },
         {
             img: "img/ratings/etcotur.png",
             imgContain: true,
-            name: "Kaique Pirani",
-            location: "Etco Tur",
+            name: "Kaique Pirani (Etco Tur)",
+            location: "Brasil - SP",
+            flag: "br",
             review: "Tive uma ótima experiência, extremamente profissional."
         }
     ];
@@ -53,24 +59,28 @@ function Ratings(){
             img: "img/ratings/tenor.webp",
             name: "Tenor Ivanhoe",
             location: "Sweden",
+            flag: "se",
             review: "One young energetic talented author who listens to the client's opinion and makes interesting music"
         },
         {
             img: "img/ratings/cris.webp",
             name: "Ashen",
             location: "United Kingdom",
+            flag: "gb",
             review: "Another brilliant piece of work, definitely wanna work with him again"
         },
         {
             img: "img/ratings/kelleemorris.webp",
             name: "Kellee Morris",
             location: "United States",
+            flag: "us",
             review: "Brenio was great at communicating and brought my idea to life. He listened to the details I was wanting for my logo and even gave me some other options with his own twist on it. He gave an estimated delivery date, and didn't go over that. Brenio is great and does amazing work!"
         },
         {
             img: "img/ratings/freedomTrail.webp",
             name: "Off-Road PowderCustom",
             location: "United States",
+            flag: "us",
             review: "Brenio is a great person to work with. This is my second purchase and he has done exactly as I have asked of him and he did it on time and on budget both times. Thank you Brenio I will be back soon! Great job"
         },
         {
@@ -78,13 +88,15 @@ function Ratings(){
             imgContain: true,
             name: "Antonio Sorbara",
             location: "Brazil - SP",
+            flag: "br",
             review: "Brenio is an excellent professional. I have hired him several times: always helpful, careful with his deliveries and approachable for questions. I not only recommend him, I will keep hiring him!"
         },
         {
             img: "img/ratings/etcotur.png",
             imgContain: true,
-            name: "Kaique Pirani",
-            location: "Etco Tur",
+            name: "Kaique Pirani (Etco Tur)",
+            location: "Brazil - SP",
+            flag: "br",
             review: "I had a great experience, extremely professional."
         }
     ];
@@ -135,6 +147,7 @@ function Ratings(){
                             imgService={testimonial.img}
                             customerNameService={testimonial.name}
                             customerLocation={testimonial.location}
+                            customerFlag={testimonial.flag}
                             imgContain={testimonial.imgContain}
                             customerReviewService={testimonial.review}
                         />

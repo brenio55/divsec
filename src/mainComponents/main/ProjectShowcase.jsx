@@ -114,12 +114,13 @@ function ProjectShowcase({ project, index }) {
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="projectNameText"
                             title={language === 'pt' ? `Abrir ${name}` : `Open ${name}`}
                         >
                             {name}
                         </a>
                     ) : (
-                        name
+                        <span className="projectNameText">{name}</span>
                     )}
                 </h3>
                 <p className="projectDescription">{description[language]}</p>
