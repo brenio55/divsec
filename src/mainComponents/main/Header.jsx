@@ -50,6 +50,7 @@ function Header (){
                                 <>
                                     <li><a href="#home">{language === 'pt' ? 'Início' : 'Home'}</a></li>
                                     <li><a href="#services">{language === 'pt' ? 'Serviços' : 'Services'}</a></li>
+                                    <li><a href="#projects">{language === 'pt' ? 'Projetos' : 'Projects'}</a></li>
                                     <li><a href="#clients">{language === 'pt' ? 'Clientes' : 'Clients'}</a></li>
                                     <li><Link to="/about">{language === 'pt' ? 'Quem Somos' : 'About Us'}</Link></li>
                                 </>
@@ -86,6 +87,7 @@ function Header (){
                             <>
                                 <li><a href="#home" onClick={toggleMobileMenu}>{language === 'pt' ? 'Início' : 'Home'}</a></li>
                                 <li><a href="#services" onClick={toggleMobileMenu}>{language === 'pt' ? 'Serviços' : 'Services'}</a></li>
+                                <li><a href="#projects" onClick={toggleMobileMenu}>{language === 'pt' ? 'Projetos' : 'Projects'}</a></li>
                                 <li><a href="#clients" onClick={toggleMobileMenu}>{language === 'pt' ? 'Clientes' : 'Clients'}</a></li>
                                 <li><Link to="/about" onClick={toggleMobileMenu}>{language === 'pt' ? 'Quem Somos' : 'About Us'}</Link></li>
                             </>
